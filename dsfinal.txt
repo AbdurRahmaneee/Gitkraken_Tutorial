@@ -102,81 +102,115 @@ int settings(13,1)
 
 
 #    Names of initial variables
-char initialName(36,30)
+char initialName(53,40)
+dCMachine.R
 dCMachine.resistor.R
 dCMachine.resistor.T_ref
 dCMachine.resistor.alpha
 dCMachine.resistor.v
-dCMachine.resistor.n.v
+dCMachine.resistor.p.i
+dCMachine.resistor.n.i
+dCMachine.resistor.i
 dCMachine.resistor.useHeatPort
 dCMachine.resistor.T
 dCMachine.resistor.LossPower
 dCMachine.resistor.R_actual
 dCMachine.inductor.v
-dCMachine.inductor.n.v
+dCMachine.inductor.p.i
+dCMachine.inductor.n.i
 dCMachine.inductor.i
 dCMachine.inductor.der(i)
 dCMachine.inductor.L
 dCMachine.emf.useSupport
 dCMachine.emf.k
+dCMachine.emf.i
 dCMachine.emf.phi
 dCMachine.emf.tau
+dCMachine.emf.tauElectrical
+dCMachine.emf.p.i
 dCMachine.emf.n.v
+dCMachine.emf.n.i
+dCMachine.emf.flange.tau
 dCMachine.emf.fixed.phi0
+dCMachine.emf.fixed.flange.tau
+dCMachine.emf.internalSupport.tau
+dCMachine.emf.internalSupport.flange.tau
 dCMachine.ground.p.v
 dCMachine.ground.p.i
-dCMachine.inertia.flange_b.tau
+dCMachine.inertia.flange_a.tau
 dCMachine.inertia.J
 dCMachine.inertia.stateSelect
-dCMachine.inertia.phi
-dCMachine.inertia.der(phi)
-dCMachine.inertia.w
-dCMachine.inertia.der(w)
 dCMachine.flange.tau
 dCMachine.p.v
+dCMachine.p.i
 dCMachine.n.v
-signalVoltage.n.v
-step.height
-step.offset
-step.startTime
+dCMachine.n.i
+dCMachine.L
+dCMachine.J
+inertia.J
+inertia.stateSelect
+inertia.phi
+inertia.der(phi)
+inertia.w
+inertia.der(w)
+constantTorque.useSupport
+constantTorque.phi_support
+constantTorque.tau_constant
 
-double initialValue(36,6)
- -1       1                  0       0                  1   280   # dCMachine.resistor.R
+double initialValue(53,6)
+ -1       1                  0       0                  1   280   # dCMachine.R
+ -2       1                  0       0                  6   256   # dCMachine.resistor.R
  -1  3.0014999999999998E+02  0 1.0000000000000000E+100  1   280   # dCMachine.resistor.T_ref
  -1       0                  0       0                  1   280   # dCMachine.resistor.alpha
- -2  5.3352362867016911E-01  0       0                  6   256   # dCMachine.resistor.v
- -2  4.6647637132983089E-01  0       0                  6   260   # dCMachine.resistor.n.v
+ -2       0                  0       0                  6   256   # dCMachine.resistor.v
+ -2       0                  0       0                  6   388   # dCMachine.resistor.p.i
+ -2       0                  0       0                  6   388   # dCMachine.resistor.n.i
+ -2       0                  0       0                  6   256   # dCMachine.resistor.i
  -2       0                  0       0                  6   769   # dCMachine.resistor.useHeatPort
  -2  3.0014999999999998E+02  0 1.0000000000000000E+100  6   256   # dCMachine.resistor.T
- -2  2.8464746234938448E-01  0       0                  6   256   # dCMachine.resistor.LossPower
+ -2       0                  0       0                  6   256   # dCMachine.resistor.LossPower
  -2       1                  0       0                  6   256   # dCMachine.resistor.R_actual
- -2  1.2620586498125330E-01  0       0                  6   256   # dCMachine.inductor.v
- -2  3.4027050634857758E-01  0       0                  6   260   # dCMachine.inductor.n.v
- -2  5.3352362867016911E-01  0       0                  2   280   # dCMachine.inductor.i
- -2  1.2620586498125330E-01  0       0                  3   256   # dCMachine.inductor.der(i)
- -1       1                  0       0                  1   280   # dCMachine.inductor.L
+ -2       0                  0       0                  6   256   # dCMachine.inductor.v
+ -2       0                  0       0                  6   388   # dCMachine.inductor.p.i
+ -2       0                  0       0                  6   388   # dCMachine.inductor.n.i
+ -2       0                  0       0                  6   256   # dCMachine.inductor.i
+ -2       0                  0       0                  6   256   # dCMachine.inductor.der(i)
+ -2  1.0000000000000001E-01  0       0                  6   256   # dCMachine.inductor.L
  -2       0                  0       0                  6   769   # dCMachine.emf.useSupport
  -1       1                  0       0                  1   280   # dCMachine.emf.k
- -2  1.2620586498130926E-01  0       0                  6   256   # dCMachine.emf.phi
- -2 -5.3352362867016911E-01  0       0                  6   256   # dCMachine.emf.tau
+ -2       0                  0       0                  6   256   # dCMachine.emf.i
+ -2  4.9950049959356875E+00  0       0                  6   256   # dCMachine.emf.phi
+ -2       0                  0       0                  6   256   # dCMachine.emf.tau
+ -2       0                  0       0                  6   256   # dCMachine.emf.tauElectrical
+ -2       0                  0       0                  6   388   # dCMachine.emf.p.i
  -2       0                  0       0                  6   260   # dCMachine.emf.n.v
+ -2       0                  0       0                  6   388   # dCMachine.emf.n.i
+ -2       0                  0       0                  6   388   # dCMachine.emf.flange.tau
  -1       0                  0       0                  1  1304   # dCMachine.emf.fixed.phi0
+ -2       0                  0       0                  6  1412   # dCMachine.emf.fixed.flange.tau
+ -2       0                  0       0                  6  1280   # dCMachine.emf.internalSupport.tau
+ -2       0                  0       0                  6  1412   # dCMachine.emf.internalSupport.flange.tau
  -2       0                  0       0                  6   260   # dCMachine.ground.p.v
  -2       0                  0       0                  6   388   # dCMachine.ground.p.i
- -2       0                  0       0                  6   388   # dCMachine.inertia.flange_b.tau
- -1       1                  0 1.0000000000000000E+100  1   280   # dCMachine.inertia.J
+ -2       0                  0       0                  6   388   # dCMachine.inertia.flange_a.tau
+ -2  1.0000000000000000E-03  0 1.0000000000000000E+100  6   256   # dCMachine.inertia.J
  -2       3                  1       5                  6   770   # dCMachine.inertia.stateSelect
- -2  1.2620586498130926E-01  0       0                  2   280   # dCMachine.inertia.phi
- -2  3.4027050634857758E-01  0       0                  3   256   # dCMachine.inertia.der(phi)
- -2  3.4027050634857758E-01  0       0                  2   280   # dCMachine.inertia.w
- -2  5.3352362867016911E-01  0       0                  3   256   # dCMachine.inertia.der(w)
- -2       0                  0       0                  6   388   # dCMachine.flange.tau
- -2       1                  0       0                  6   324   # dCMachine.p.v
+ -2  9.9900099900099917E-03  0       0                  6   388   # dCMachine.flange.tau
+ -2  9.9900099900099910E+00  0       0                  6   260   # dCMachine.p.v
+ -2       0                  0       0                  6   388   # dCMachine.p.i
  -2       0                  0       0                  6   260   # dCMachine.n.v
- -2       0                  0       0                  6   260   # signalVoltage.n.v
- -1       1                  0       0                  1   280   # step.height
- -1       0                  0       0                  1   280   # step.offset
- -1       0                  0       0                  1   280   # step.startTime
+ -2       0                  0       0                  6   388   # dCMachine.n.i
+ -1  1.0000000000000001E-01  0       0                  1   280   # dCMachine.L
+ -1  1.0000000000000000E-03  0       0                  1   280   # dCMachine.J
+ -1       1                  0 1.0000000000000000E+100  1   280   # inertia.J
+ -2       3                  1       5                  6   770   # inertia.stateSelect
+ -2  4.9950049959356875E+00  0       0                  2   280   # inertia.phi
+ -2  9.9900099900099910E+00  0       0                  3   256   # inertia.der(phi)
+ -2  9.9900099900099910E+00  0       0                  2   280   # inertia.w
+ -2  9.9900099900099910E+00  0       0                  3   256   # inertia.der(w)
+ -2       0                  0       0                  6   769   # constantTorque.useSupport
+ -2       0                  0       0                  6  1280   # constantTorque.phi_support
+ -1      10                  0       0                  1   280   # constantTorque.tau_constant
 
 
 # Matrix with 6 columns defining the initial value calculation
@@ -227,41 +261,58 @@ double initialValue(36,6)
 #   nominal value (and maybe minimum and maximum values given in 
 #   column 3 and 4). If these values are zero, scale(i)=1 is used).
 #
-char initialDescription(36,90)
+char initialDescription(53,120)
+Resistance of the armature [Ohm]
 Resistance at temperature T_ref [Ohm]
 Reference temperature [K|degC]
 Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref)) [1/K]
 Voltage drop of the two pins (= p.v - n.v) [V]
-Potential at the pin [V]
+Current flowing into the pin [A]
+Current flowing into the pin [A]
+Current flowing from pin p to pin n [A]
 = true, if heatPort is enabled [:#(type=Boolean)]
 Fixed device temperature if useHeatPort = false [K|degC]
 Loss power leaving component via heatPort [W]
 Actual resistance = R*(1 + alpha*(T_heatPort - T_ref)) [Ohm]
 Voltage drop of the two pins (= p.v - n.v) [V]
-Potential at the pin [V]
+Current flowing into the pin [A]
+Current flowing into the pin [A]
 Current flowing from pin p to pin n [A]
 der(Current flowing from pin p to pin n) [A/s]
 Inductance [H]
 = true, if support flange enabled, otherwise implicitly grounded [:#(type=Boolean)]
 Transformation coefficient [N.m/A]
+Current flowing from positive to negative pin [A]
 Angle of shaft flange with respect to support (= flange.phi - support.phi) [rad|deg]
 Torque of flange [N.m]
-Potential at the pin [V]
-Fixed offset angle of housing [rad|deg]
+Electrical torque [N.m]
+Current flowing into the pin [A]
 Potential at the pin [V]
 Current flowing into the pin [A]
 Cut torque in the flange [N.m]
+Fixed offset angle of housing [rad|deg]
+Cut torque in the flange [N.m]
+External support torque (must be computed via torque balance in model where InternalSupport is used; = flange.tau) [N.m]
+Cut torque in the flange [N.m]
+Potential at the pin [V]
+Current flowing into the pin [A]
+Cut torque in the flange [N.m]
+Moment of inertia [kg.m2]
+Priority to use phi and w as states [:#(type=StateSelect)]
+Cut torque in the flange [N.m]
+Potential at the pin [V]
+Current flowing into the pin [A]
+Potential at the pin [V]
+Current flowing into the pin [A]
+Inductance of the DC Machine [H]
+Internal inertia of the DC machine [kg.m2]
 Moment of inertia [kg.m2]
 Priority to use phi and w as states [:#(type=StateSelect)]
 Absolute rotation angle of component [rad|deg]
 der(Absolute rotation angle of component) [rad/s]
 Absolute angular velocity of component (= der(phi)) [rad/s]
 der(Absolute angular velocity of component (= der(phi))) [rad/s2]
-Cut torque in the flange [N.m]
-Potential at the pin [V]
-Potential at the pin [V]
-Potential at the pin [V]
-Height of step [V]
-Offset of output signal y [V]
-Output y = offset for time < startTime [s]
+= true, if support flange enabled, otherwise implicitly grounded [:#(type=Boolean)]
+Absolute angle of support flange [rad|deg]
+Constant torque (if negative, torque is acting as load in positive direction of rotation) [N.m]
 
