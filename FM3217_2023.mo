@@ -520,5 +520,31 @@ package FM3217_2023 "Collection of models as created in FM3217"
         experiment(StopTime=600, __Dymola_NumberOfIntervals=5000));
     end ElectricKettle;
   end Tutorial4;
-  annotation (uses(Modelica(version="4.0.0")));
+
+  package Tutorial5
+    model ConnectingPipes
+      HydroPower.HydroSystems.Pipe pipe
+        annotation (Placement(transformation(extent={{-6,54},{8,68}})));
+      inner HydroPower.System_HPL system_HPL(steadyState=true,
+          constantTemperature=true)
+        annotation (Placement(transformation(extent={{-96,82},{-80,98}})));
+      HydroPower.SinksAndSources.Fixed_pT source(paraOption=false)
+        annotation (Placement(transformation(extent={{-62,54},{-48,68}})));
+      HydroPower.SinksAndSources.Fixed_pT sink(paraOption=false)
+        annotation (Placement(transformation(extent={{54,54},{40,68}})));
+    equation
+      connect(source.b, pipe.a)
+        annotation (Line(points={{-47.3,61},{-6.7,61}}, color={0,0,255}));
+      connect(sink.b, pipe.b)
+        annotation (Line(points={{39.3,61},{8.7,61}}, color={0,0,255}));
+      annotation (
+        Icon(coordinateSystem(preserveAspectRatio=false)),
+        Diagram(coordinateSystem(preserveAspectRatio=false)),
+        experiment(
+          StopTime=600,
+          Tolerance=1e-05,
+          __Dymola_Algorithm="Radau"));
+    end ConnectingPipes;
+  end Tutorial5;
+  annotation (uses(Modelica(version="4.0.0"), HydroPower(version="2.17")));
 end FM3217_2023;
