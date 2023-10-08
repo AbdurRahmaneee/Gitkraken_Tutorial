@@ -9,9 +9,9 @@ Modelica experiment file
 double experiment(7,1)
        0                   # StartTime    Time at which integration starts
                            #              (and linearization and trimming time)
-     600                   # StopTime     Time at which integration stops
+    6000                   # StopTime     Time at which integration stops
        0                   # Increment    Communication step size, if > 0
-     500                   # nInterval    Number of communication intervals, if > 0
+    5000                   # nInterval    Number of communication intervals, if > 0
   1.0000000000000000E-04   # Tolerance    Relative precision of signals for
                            #              simulation, linearization and trimming
        0                   # MaxFixedStep Maximum step size of fixed step size
@@ -102,7 +102,7 @@ int settings(13,1)
 
 
 #    Names of initial variables
-char initialName(1886,45)
+char initialName(1927,45)
 system_HPL.gasPU
 system_HPL.tubeElasticity
 system_HPL.pipeRoughness
@@ -611,6 +611,45 @@ pipeValve2.tubeElasticity
 pipeValve2.showDataInIcon
 pipeValve2.enable_dataVizPort_upper
 pipeValve2.enable_dataVizPort_lower
+closedVolume.paraOption
+closedVolume.D
+closedVolume.Ac
+closedVolume.L
+closedVolume.gasPU
+closedVolume.dVdp
+closedVolume.p_start
+closedVolume.T_start
+closedVolume.steadyState
+closedVolume.constantTemperature
+closedVolume.include_Ekin
+closedVolume.d
+closedVolume.M
+closedVolume.cv
+closedVolume.betaBulk
+closedVolume.alphaT
+closedVolume.v
+closedVolume.h
+closedVolume.H
+closedVolume.kappa
+closedVolume.sum_m
+closedVolume.sum_H_flow
+closedVolume.sum_E
+closedVolume.H_flow_portA
+closedVolume.H_flow_portB
+closedVolume.A
+closedVolume.Vol
+closedVolume.der_p
+closedVolume.vIn
+closedVolume.der_Vol
+closedVolume.state.p
+closedVolume.state.T
+closedVolume.state.X[1]
+closedVolume.p
+closedVolume.der(p)
+closedVolume.T
+closedVolume.der(T)
+closedVolume.a.X_outflow[1]
+closedVolume.b.X_outflow[1]
 pipe.tubeSeg[1].No_Return
 pipe.tubeSeg[1].L
 pipe.tubeSeg[1].D[1]
@@ -1660,6 +1699,8 @@ pipeValve2.pipe.tubeSeg[1].steadyState
 pipeValve2.pipe.tubeSeg[1].Q_start
 pipeValve2.pipe.tubeSeg[1].mdot_start
 pipeValve2.pipe.tubeSeg[1].V
+pipeValve2.pipe.tubeSeg[1].m_dot
+pipeValve2.pipe.tubeSeg[1].der(m_dot)
 pipeValve2.pipe.tubeSeg[1].c
 pipeValve2.pipe.tubeSeg[1].phi
 pipeValve2.pipe.tubeSeg[1].A[1]
@@ -1990,7 +2031,7 @@ pipeValve2.pipe.volSeg[3].der(T)
 pipeValve2.pipe.volSeg[3].a.X_outflow[1]
 pipeValve2.pipe.volSeg[3].b.X_outflow[1]
 
-double initialValue(1886,6)
+double initialValue(1927,6)
  -1       0                       0                       0                
   1   280   # system_HPL.gasPU
  -1       0                       0                       0                
@@ -2513,11 +2554,11 @@ double initialValue(1886,6)
   6   260   # sink1.b.h_outflow
   0       1                       0                       1                
   6   260   # sink1.b.X_outflow[1]
- -1  9.0000000000000002E-01       0                       0                
+ -1  9.8999999999999999E-01       0                       0                
   1   280   # ramp.height
- -1     100                       0                 1.0000000000000000E+100
+ -1      10                       0                 1.0000000000000000E+100
   1   280   # ramp.duration
- -1  1.0000000000000001E-01       0                       0                
+ -1  1.0000000000000000E-02       0                       0                
   1   280   # ramp.offset
  -1     100                       0                       0                
   1   280   # ramp.startTime
@@ -3007,6 +3048,84 @@ double initialValue(1886,6)
   6   257   # pipeValve2.enable_dataVizPort_upper
   0       0                       0                       0                
   6   257   # pipeValve2.enable_dataVizPort_lower
+ -1       1                       1                       2                
+  1   282   # closedVolume.paraOption
+ -1       1                       0                       0                
+  1   280   # closedVolume.D
+ -1       1                       0                       0                
+  1   280   # closedVolume.Ac
+ -1       1                       0                       0                
+  1   280   # closedVolume.L
+  0       0                       0                       0                
+  6   256   # closedVolume.gasPU
+  0       0                       0                       0                
+  6   256   # closedVolume.dVdp
+ -1  100000                       0                       0                
+  1   280   # closedVolume.p_start
+  0  2.8814999999999998E+02       0                   10000                
+  6   256   # closedVolume.T_start
+  0       1                       0                       0                
+  6   257   # closedVolume.steadyState
+  0       1                       0                       0                
+  6   257   # closedVolume.constantTemperature
+ -1       1                       0                       0                
+  1   281   # closedVolume.include_Ekin
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # closedVolume.d
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # closedVolume.M
+  0       0                       0                       0                
+  6   256   # closedVolume.cv
+  0       0                       0                       0                
+  6   256   # closedVolume.betaBulk
+  0       0                       0                       0                
+  6   256   # closedVolume.alphaT
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # closedVolume.v
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   256   # closedVolume.h
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # closedVolume.H
+  0       0                       0                       0                
+  6   256   # closedVolume.kappa
+  0       0                       0                       0                
+  6   288   # closedVolume.sum_m
+  0       0                       0                       0                
+  6   256   # closedVolume.sum_H_flow
+  0       0                       0                       0                
+  6   256   # closedVolume.sum_E
+  0       0                       0                       0                
+  6   256   # closedVolume.H_flow_portA
+  0       0                       0                       0                
+  6   256   # closedVolume.H_flow_portB
+  0       0                       0                       0                
+  6  1280   # closedVolume.A
+  0       0                       0                       0                
+  6  1280   # closedVolume.Vol
+  0       0                       0                       0                
+  6  1280   # closedVolume.der_p
+  0       0                       0                       0                
+  6  1280   # closedVolume.vIn
+ -1       0                       0                       0                
+  1  1304   # closedVolume.der_Vol
+  0       0                       0                  1.0000000000000000E+08
+  6   256   # closedVolume.state.p
+  0     300                       0                   10000                
+  6   256   # closedVolume.state.T
+  0       1                       0                       1                
+  6   256   # closedVolume.state.X[1]
+ -1       0                       0                       0                
+  2   272   # closedVolume.p
+  0       0                       0                       0                
+  3   256   # closedVolume.der(p)
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # closedVolume.T
+  0       0                       0                       0                
+  6   256   # closedVolume.der(T)
+  0       1                       0                       1                
+  6   260   # closedVolume.a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # closedVolume.b.X_outflow[1]
   0       0                       0                       0                
   6   257   # pipe.tubeSeg[1].No_Return
   0       0                       0                       0                
@@ -5105,6 +5224,10 @@ double initialValue(1886,6)
   6   256   # pipeValve2.pipe.tubeSeg[1].mdot_start
   0       0                       0                       0                
   6   256   # pipeValve2.pipe.tubeSeg[1].V
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   272   # pipeValve2.pipe.tubeSeg[1].m_dot
+  0       0                       0                       0                
+  3   256   # pipeValve2.pipe.tubeSeg[1].der(m_dot)
   0       0                       0                       0                
   6   256   # pipeValve2.pipe.tubeSeg[1].c
   0       0                       0                       0                
@@ -5178,7 +5301,7 @@ double initialValue(1886,6)
   0       0                       0                       0                
   6  1280   # pipeValve2.pipe.tubeSeg[1].Re2
   0  100000                       0                  1.0000000000000000E+08
-  6  1312   # pipeValve2.pipe.tubeSeg[1].state.p
+  6  1280   # pipeValve2.pipe.tubeSeg[1].state.p
   0     300                       0                   10000                
   6  1280   # pipeValve2.pipe.tubeSeg[1].state.T
   0       1                       0                       1                
@@ -5813,7 +5936,7 @@ double initialValue(1886,6)
 #   nominal value (and maybe minimum and maximum values given in 
 #   column 3 and 4). If these values are zero, scale(i)=1 is used).
 #
-char initialDescription(1886,123)
+char initialDescription(1927,123)
 Air content in the water [1]
 Average elasticity of the pipe as dVol/dp [m3/bar] [m4.kg-1.s2]
 Average relative roughness of the pipe [1]
@@ -6322,237 +6445,6 @@ Average elasticity of the pipe as dVol/dp [m3/bar] [m4.kg-1.s2]
 Shows parameter data in icon [:#(type=Boolean)]
 Enable data visualizer port on the upper side [:#(type=Boolean)]
 Enable data visualizer port on the bottom side [:#(type=Boolean)]
-Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
-Length [m]
-Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
-Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
-Head of the pipe, i.e. difference between left and right port elevation [m]
-Average relative roughness of the pipe [1]
-Vector of factors for calculation of losses in the pipe (see details in description above) [1]
-Vector of factors for calculation of losses in the pipe (see details in description above) [1]
-Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
-Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
-If true, model initializes in steady state [:#(type=Boolean)]
-Initial volume flow rate [m3/s]
-Initial mass flow rate [kg/s]
-Fluid Volume - truncated cone [m3]
-[kg/s]
-[kg/s2]
-Water velocity [m/s]
-Angle between gravity vector and the center line of the pipe [rad|deg]
-End areas of the pipe [m2]
-End areas of the pipe [m2]
-[1]
-Active area for pressure force calculation [m2]
-[m]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-
-[N]
-[N]
-[m/s]
-[m/s]
-
-
-
-
-
-
-
-
-
-
-Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
-Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
-[N]
-[N]
-[N]
-[kg/m3|g/cm3]
-[Pa.s]
-[J/(kg.K)]
-[1]
-[1]
-Absolute pressure of medium [Pa|bar]
-Temperature of medium [K|degC]
-mass fractions [kg/kg]
-Mass fractions of exiting fluid [kg/kg]
-Mass fractions of exiting fluid [kg/kg]
-Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
-Length [m]
-Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
-Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
-Head of the pipe, i.e. difference between left and right port elevation [m]
-Average relative roughness of the pipe [1]
-Vector of factors for calculation of losses in the pipe (see details in description above) [1]
-Vector of factors for calculation of losses in the pipe (see details in description above) [1]
-Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
-Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
-If true, model initializes in steady state [:#(type=Boolean)]
-Initial volume flow rate [m3/s]
-Initial mass flow rate [kg/s]
-Fluid Volume - truncated cone [m3]
-[kg/s]
-[kg/s2]
-[m3/s]
-Water velocity [m/s]
-Angle between gravity vector and the center line of the pipe [rad|deg]
-End areas of the pipe [m2]
-End areas of the pipe [m2]
-[1]
-Active area for pressure force calculation [m2]
-[m]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-
-[N]
-[N]
-[m/s]
-[m/s]
-
-
-
-
-
-
-
-
-
-
-Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
-Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
-[N]
-[N]
-[N]
-[kg/m3|g/cm3]
-[Pa.s]
-[J/(kg.K)]
-[1]
-[1]
-Absolute pressure of medium [Pa|bar]
-Temperature of medium [K|degC]
-mass fractions [kg/kg]
-Specific enthalpy of exiting fluid  [J/kg]
-Mass fractions of exiting fluid [kg/kg]
-Mass fractions of exiting fluid [kg/kg]
-Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
-Length [m]
-Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
-Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
-Head of the pipe, i.e. difference between left and right port elevation [m]
-Average relative roughness of the pipe [1]
-Vector of factors for calculation of losses in the pipe (see details in description above) [1]
-Vector of factors for calculation of losses in the pipe (see details in description above) [1]
-Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
-Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
-If true, model initializes in steady state [:#(type=Boolean)]
-Initial volume flow rate [m3/s]
-Initial mass flow rate [kg/s]
-Fluid Volume - truncated cone [m3]
-[kg/s]
-[kg/s2]
-[m3/s]
-Water velocity [m/s]
-Angle between gravity vector and the center line of the pipe [rad|deg]
-End areas of the pipe [m2]
-End areas of the pipe [m2]
-[1]
-Active area for pressure force calculation [m2]
-[m]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-
-[N]
-[N]
-[m/s]
-[m/s]
-
-
-
-
-
-
-
-
-
-
-Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
-Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
-[N]
-[N]
-[N]
-[kg/m3|g/cm3]
-[Pa.s]
-[J/(kg.K)]
-[1]
-[1]
-Absolute pressure of medium [Pa|bar]
-Temperature of medium [K|degC]
-mass fractions [kg/kg]
-Mass fractions of exiting fluid [kg/kg]
-Mass fractions of exiting fluid [kg/kg]
-Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
-Length [m]
-Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
-Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
-Head of the pipe, i.e. difference between left and right port elevation [m]
-Average relative roughness of the pipe [1]
-Vector of factors for calculation of losses in the pipe (see details in description above) [1]
-Vector of factors for calculation of losses in the pipe (see details in description above) [1]
-Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
-Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
-If true, model initializes in steady state [:#(type=Boolean)]
-Initial volume flow rate [m3/s]
-Initial mass flow rate [kg/s]
-Fluid Volume - truncated cone [m3]
-[kg/s]
-[kg/s2]
-Water velocity [m/s]
-Angle between gravity vector and the center line of the pipe [rad|deg]
-End areas of the pipe [m2]
-End areas of the pipe [m2]
-[1]
-Active area for pressure force calculation [m2]
-[m]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
-
-[N]
-[N]
-[m/s]
-[m/s]
-
-
-
-
-
-
-
-
-
-
-Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
-Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
-[N]
-[N]
-[N]
-[kg/m3|g/cm3]
-[Pa.s]
-[J/(kg.K)]
-[1]
-[1]
-Absolute pressure of medium [Pa|bar]
-Temperature of medium [K|degC]
-mass fractions [kg/kg]
-Mass fractions of exiting fluid [kg/kg]
-Mass fractions of exiting fluid [kg/kg]
 Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
 Diameter of volume [m]
 Cross section area of volume [m2]
@@ -6570,82 +6462,7 @@ If true, include kinetic energy in energy balance [:#(type=Boolean)]
 [Pa|bar]
 [m-3.kg.K-1]
 [Pa.s]
-Water head [m]
-[1/Pa]
-[kg/s]
-[W]
-[W]
-Enthalpy flowrate at port A [W]
-Enthalpy flowrate at port B [W]
-[m2]
-[m3]
-[Pa/s]
-[m/s]
-[m3/s]
-Absolute pressure of medium [Pa|bar]
-Temperature of medium [K|degC]
-mass fractions [kg/kg]
-[Pa|bar]
-[Pa/s]
-[K|degC]
-[K/s]
-Mass fractions of exiting fluid [kg/kg]
-Mass fractions of exiting fluid [kg/kg]
-Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
-Diameter of volume [m]
-Cross section area of volume [m2]
-Length of the container [m]
-pu content of the free gas in the enclosed media [1]
-Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
-Initialization pressure [Pa|bar]
-Initialization temperature [K|degC]
-If true, model initializes in steady state [:#(type=Boolean)]
-If true, Temperature is constant  [:#(type=Boolean)]
-If true, include kinetic energy in energy balance [:#(type=Boolean)]
-[kg/m3|g/cm3]
-[kg]
-[J/(kg.K)]
-[Pa|bar]
-[m-3.kg.K-1]
-[Pa.s]
-Water head [m]
-[1/Pa]
-[kg/s]
-[W]
-[W]
-Enthalpy flowrate at port A [W]
-Enthalpy flowrate at port B [W]
-[m2]
-[m3]
-[Pa/s]
-[m/s]
-[m3/s]
-Absolute pressure of medium [Pa|bar]
-Temperature of medium [K|degC]
-mass fractions [kg/kg]
-[Pa|bar]
-[Pa/s]
-[K|degC]
-[K/s]
-Mass fractions of exiting fluid [kg/kg]
-Mass fractions of exiting fluid [kg/kg]
-Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
-Diameter of volume [m]
-Cross section area of volume [m2]
-Length of the container [m]
-pu content of the free gas in the enclosed media [1]
-Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
-Initialization pressure [Pa|bar]
-Initialization temperature [K|degC]
-If true, model initializes in steady state [:#(type=Boolean)]
-If true, Temperature is constant  [:#(type=Boolean)]
-If true, include kinetic energy in energy balance [:#(type=Boolean)]
-[kg/m3|g/cm3]
-[kg]
-[J/(kg.K)]
-[Pa|bar]
-[m-3.kg.K-1]
-[Pa.s]
+[J/kg]
 Water head [m]
 [1/Pa]
 [kg/s]
@@ -7371,6 +7188,353 @@ If true, model initializes in steady state [:#(type=Boolean)]
 Initial volume flow rate [m3/s]
 Initial mass flow rate [kg/s]
 Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+[m3/s]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+[m3/s]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
 Water velocity [m/s]
 Angle between gravity vector and the center line of the pipe [rad|deg]
 End areas of the pipe [m2]
