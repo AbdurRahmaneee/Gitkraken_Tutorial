@@ -620,8 +620,11 @@ package FM3217_2023 "Collection of models as created in FM3217"
     end SimpleWaterWay;
 
     model WaterWayWithSurgeShaft
-      extends SimpleWaterWay;
-      HydroPower.HydroSystems.SurgeTank surgeTank3(deltZ=15)
+      extends SimpleWaterWay(ramp(height=-0.9, offset=1));
+      HydroPower.HydroSystems.SurgeTank surgeTank3(
+        D=100,
+        deltZ=15,
+        Vol=1000)
         annotation (Placement(transformation(extent={{-16,-74},{6,-52}})));
       HydroPower.SinksAndSources.Fixed_pT source3(paraOption=false)
         annotation (Placement(transformation(extent={{-92,-72},{-74,-54}})));
@@ -650,7 +653,7 @@ package FM3217_2023 "Collection of models as created in FM3217"
         annotation (Line(points={{14.7,-63},{7.1,-63}}, color={0,0,255}));
       connect(ramp.y, pipeValve3.ValveCtrl) annotation (Line(points={{-61,48},{
               -60,48},{-60,-46},{29,-46},{29,-53.1}}, color={0,0,127}));
-      annotation (experiment(StopTime=6000, __Dymola_NumberOfIntervals=5000));
+      annotation (experiment(StopTime=600, __Dymola_NumberOfIntervals=5000));
     end WaterWayWithSurgeShaft;
   end Tutorial5;
   annotation (uses(Modelica(version="4.0.0"), HydroPower(version="2.17")));

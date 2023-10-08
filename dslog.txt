@@ -1,27 +1,28 @@
 Log-file of program ./dymosim
-(generated: Sun Oct  8 12:28:48 2023)
+(generated: Sun Oct  8 17:10:50 2023)
 
 dymosim started
 ... "dsin.txt" loading (dymosim input file)
-... "SimpleWaterWay.mat" creating (simulation result file)
+... "WaterWayWithSurgeShaft.mat" creating (simulation result file)
 
 Integration started at T = 0 using integration method DASSL
 (DAE multi-step solver (dassl/dasslrt of Petzold modified by Dassault Systemes))
-Integration terminated successfully at T = 6000
-   CPU-time for integration                : 0.69 seconds
-   CPU-time for one grid interval          : 0.138 milliseconds
-   CPU-time for initialization             : 0.004 seconds
-   Number of result points                 : 5005
+Integration terminated successfully at T = 600
+   CPU-time for integration                : 3.1 seconds
+   CPU-time for one grid interval          : 0.619 milliseconds
+   CPU-time for initialization             : 0.014 seconds
+   Number of result points                 : 5006
    Number of grid points                   : 5001
-   Number of accepted steps                : 2386
-   Number of f-evaluations (dynamics)      : 4973
-   Number of Jacobian-evaluations          : 258
+   Number of accepted steps                : 5745
+   Number of f-evaluations (dynamics)      : 11751
+   Number of crossing function evaluations : 10747
+   Number of Jacobian-evaluations          : 233
    Number of model time events             : 2
    Number of input time events             : 0
    Number of state events                  : 0
    Number of step events                   : 0
-   Minimum integration stepsize            : 8.12e-08
-   Maximum integration stepsize            : 2.34e+03
+   Minimum integration stepsize            : 8.4e-10
+   Maximum integration stepsize            : 0.846
    Maximum integration order               : 5
 Calling terminal section
 ... "dsfinal.txt" creating (final states)

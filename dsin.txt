@@ -9,7 +9,7 @@ Modelica experiment file
 double experiment(7,1)
        0                   # StartTime    Time at which integration starts
                            #              (and linearization and trimming time)
-    6000                   # StopTime     Time at which integration stops
+     600                   # StopTime     Time at which integration stops
        0                   # Increment    Communication step size, if > 0
     5000                   # nInterval    Number of communication intervals, if > 0
   1.0000000000000000E-04   # Tolerance    Relative precision of signals for
@@ -102,7 +102,7 @@ int settings(13,1)
 
 
 #    Names of initial variables
-char initialName(1927,45)
+char initialName(2963,52)
 system_HPL.gasPU
 system_HPL.tubeElasticity
 system_HPL.pipeRoughness
@@ -650,6 +650,352 @@ closedVolume.T
 closedVolume.der(T)
 closedVolume.a.X_outflow[1]
 closedVolume.b.X_outflow[1]
+surgeTank3.summary.L_col
+surgeTank3.summary.H_col
+surgeTank3.summary.Q_shaft
+surgeTank3.D
+surgeTank3.deltZ
+surgeTank3.H2L
+surgeTank3.Vol
+surgeTank3.p_start
+surgeTank3.T_start
+surgeTank3.steadyState
+surgeTank3.gasPU
+surgeTank3.showDataInIcon
+surgeTank3.L_representative
+surgeTank3.Ac_representative
+surgeTank3.startH
+surgeTank3.bottomVol.paraOption
+surgeTank3.bottomVol.D
+surgeTank3.bottomVol.Ac
+surgeTank3.bottomVol.L
+surgeTank3.bottomVol.gasPU
+surgeTank3.bottomVol.dVdp
+surgeTank3.bottomVol.p_start
+surgeTank3.bottomVol.T_start
+surgeTank3.bottomVol.steadyState
+surgeTank3.bottomVol.constantTemperature
+surgeTank3.bottomVol.include_Ekin
+surgeTank3.bottomVol.d
+surgeTank3.bottomVol.M
+surgeTank3.bottomVol.cv
+surgeTank3.bottomVol.betaBulk
+surgeTank3.bottomVol.alphaT
+surgeTank3.bottomVol.v
+surgeTank3.bottomVol.H
+surgeTank3.bottomVol.kappa
+surgeTank3.bottomVol.sum_m
+surgeTank3.bottomVol.sum_H_flow
+surgeTank3.bottomVol.sum_E
+surgeTank3.bottomVol.H_flow_portA
+surgeTank3.bottomVol.H_flow_portB
+surgeTank3.bottomVol.A
+surgeTank3.bottomVol.Vol
+surgeTank3.bottomVol.der_p
+surgeTank3.bottomVol.vIn
+surgeTank3.bottomVol.der_Vol
+surgeTank3.bottomVol.state.p
+surgeTank3.bottomVol.state.T
+surgeTank3.bottomVol.state.X[1]
+surgeTank3.bottomVol.p
+surgeTank3.bottomVol.der(p)
+surgeTank3.bottomVol.T
+surgeTank3.bottomVol.der(T)
+surgeTank3.bottomVol.a.X_outflow[1]
+surgeTank3.bottomVol.b.m_flow
+surgeTank3.bottomVol.b.X_outflow[1]
+surgeTank3.surgeShaft.paraOption
+surgeTank3.surgeShaft.D
+surgeTank3.surgeShaft.Ac
+surgeTank3.surgeShaft.deltZ
+surgeTank3.surgeShaft.rH2L
+surgeTank3.surgeShaft.tunnelRoughness
+surgeTank3.surgeShaft.locLoss
+surgeTank3.surgeShaft.recBot[1]
+surgeTank3.surgeShaft.recBot[2]
+surgeTank3.surgeShaft.startH
+surgeTank3.surgeShaft.steadyState
+surgeTank3.surgeShaft.flooded
+surgeTank3.surgeShaft.H_col
+surgeTank3.surgeShaft.K_Lloss
+surgeTank3.surgeShaft.L_eff
+surgeTank3.surgeShaft.A
+surgeTank3.surgeShaft.Lmax
+surgeTank3.surgeShaft.Fmv
+surgeTank3.surgeShaft.Ffric
+surgeTank3.surgeShaft.Fdp
+surgeTank3.surgeShaft.Fz
+surgeTank3.surgeShaft.sumF
+surgeTank3.surgeShaft.d
+surgeTank3.surgeShaft.eta
+surgeTank3.surgeShaft.state.T
+surgeTank3.surgeShaft.state.X[1]
+surgeTank3.surgeShaft.m_dot
+surgeTank3.surgeShaft.der(m_dot)
+surgeTank3.surgeShaft.Lcol
+surgeTank3.surgeShaft.der(Lcol)
+surgeTank3.surgeShaft.a.h_outflow
+surgeTank3.surgeShaft.a.X_outflow[1]
+surgeTank3.surgeShaft.frictionModel.pipeRoughness
+surgeTank3.surgeShaft.frictionModel.Re
+surgeTank3.surgeShaft.frictionModel.lambda2
+surgeTank3.surgeShaft.frictionModel.Area
+surgeTank3.surgeShaft.frictionModel.Re_lam
+surgeTank3.surgeShaft.frictionModel.Re_turb
+surgeTank3.surgeShaft.frictionModel.lambda2_turb
+surgeTank3.surgeShaft.frictionModel.lambda2_turb_der
+surgeTank3.surgeShaft.frictionModel.a[1]
+surgeTank3.surgeShaft.frictionModel.a[2]
+surgeTank3.surgeShaft.frictionModel.a[3]
+surgeTank3.surgeShaft.frictionModel.a[4]
+surgeTank3.a.h_outflow
+surgeTank3.a.X_outflow[1]
+surgeTank3.b.h_outflow
+surgeTank3.b.X_outflow[1]
+surgeTank3.constantTemperature
+source3.paraOption
+source3.p_const
+source3.T_const
+source3.b.h_outflow
+source3.b.X_outflow[1]
+sink3.paraOption
+sink3.p_const
+sink3.T_const
+sink3.b.m_flow
+sink3.b.h_outflow
+sink3.b.X_outflow[1]
+pipe3.summary.dp_pipe
+pipe3.summary.Q_in
+pipe3.summary.Q_out
+pipe3.endL[1]
+pipe3.endL[2]
+pipe3.endD[1]
+pipe3.endD[2]
+pipe3.recEnd[1]
+pipe3.recEnd[2]
+pipe3.QlossFactor
+pipe3.Lsegm
+pipe3.volD[1]
+pipe3.volD[2]
+pipe3.volD[3]
+pipe3.volL[1]
+pipe3.volL[2]
+pipe3.volL[3]
+pipe3.DZ
+pipe3.vDL[1]
+pipe3.vDL[2]
+pipe3.vDL[3]
+pipe3.vDL[4]
+pipe3.vDR[1]
+pipe3.vDR[2]
+pipe3.vDR[3]
+pipe3.vDR[4]
+pipe3.mxD[1, 1]
+pipe3.mxD[1, 2]
+pipe3.mxD[2, 1]
+pipe3.mxD[2, 2]
+pipe3.mxD[3, 1]
+pipe3.mxD[3, 2]
+pipe3.mxD[4, 1]
+pipe3.mxD[4, 2]
+pipe3.v_pStart[1]
+pipe3.v_pStart[2]
+pipe3.v_pStart[3]
+pipe3.recInM[1, 1]
+pipe3.recInM[1, 2]
+pipe3.recInM[2, 1]
+pipe3.recInM[2, 2]
+pipe3.recInM[3, 1]
+pipe3.recInM[3, 2]
+pipe3.recInM[4, 1]
+pipe3.recInM[4, 2]
+pipe3.horizontalIcon
+pipe3.a.h_outflow
+pipe3.a.X_outflow[1]
+pipe3.b.h_outflow
+pipe3.b.X_outflow[1]
+pipe3.n
+pipe3.L
+pipe3.ZL
+pipe3.ZR
+pipe3.Q_start
+pipe3.p_start
+pipe3.T_start
+pipe3.steadyState
+pipe3.pipeRoughness
+pipe3.constantTemperature
+pipe3.gasPU
+pipe3.tubeElasticity
+pipe3.showDataInIcon
+pipe3.enable_dataVizPort_upper
+pipe3.enable_dataVizPort_lower
+pipeValve3.summary.dp_pipe
+pipeValve3.summary.T_out
+pipeValve3.summary.Q_in
+pipeValve3.summary.Q_out
+pipeValve3.summary.dp_valve
+pipeValve3.summary.dp
+pipeValve3.endL[1]
+pipeValve3.endL[2]
+pipeValve3.endD[1]
+pipeValve3.endD[2]
+pipeValve3.m_dot_nom
+pipeValve3.dp_nom
+pipeValve3.d_nom
+pipeValve3.open_nom
+pipeValve3.recFact[1]
+pipeValve3.recFact[2]
+pipeValve3.FzStart
+pipeValve3.pStartBottom
+pipeValve3.pipe.summary.dp_pipe
+pipeValve3.pipe.summary.Q_out
+pipeValve3.pipe.endL[1]
+pipeValve3.pipe.endL[2]
+pipeValve3.pipe.endD[1]
+pipeValve3.pipe.endD[2]
+pipeValve3.pipe.recEnd[1]
+pipeValve3.pipe.recEnd[2]
+pipeValve3.pipe.QlossFactor
+pipeValve3.pipe.Lsegm
+pipeValve3.pipe.volD[1]
+pipeValve3.pipe.volD[2]
+pipeValve3.pipe.volD[3]
+pipeValve3.pipe.volL[1]
+pipeValve3.pipe.volL[2]
+pipeValve3.pipe.volL[3]
+pipeValve3.pipe.DZ
+pipeValve3.pipe.vDL[1]
+pipeValve3.pipe.vDL[2]
+pipeValve3.pipe.vDL[3]
+pipeValve3.pipe.vDL[4]
+pipeValve3.pipe.vDR[1]
+pipeValve3.pipe.vDR[2]
+pipeValve3.pipe.vDR[3]
+pipeValve3.pipe.vDR[4]
+pipeValve3.pipe.mxD[1, 1]
+pipeValve3.pipe.mxD[1, 2]
+pipeValve3.pipe.mxD[2, 1]
+pipeValve3.pipe.mxD[2, 2]
+pipeValve3.pipe.mxD[3, 1]
+pipeValve3.pipe.mxD[3, 2]
+pipeValve3.pipe.mxD[4, 1]
+pipeValve3.pipe.mxD[4, 2]
+pipeValve3.pipe.v_pStart[1]
+pipeValve3.pipe.v_pStart[2]
+pipeValve3.pipe.v_pStart[3]
+pipeValve3.pipe.recInM[1, 1]
+pipeValve3.pipe.recInM[1, 2]
+pipeValve3.pipe.recInM[2, 1]
+pipeValve3.pipe.recInM[2, 2]
+pipeValve3.pipe.recInM[3, 1]
+pipeValve3.pipe.recInM[3, 2]
+pipeValve3.pipe.recInM[4, 1]
+pipeValve3.pipe.recInM[4, 2]
+pipeValve3.pipe.horizontalIcon
+pipeValve3.pipe.a.X_outflow[1]
+pipeValve3.pipe.b.h_outflow
+pipeValve3.pipe.b.X_outflow[1]
+pipeValve3.pipe.n
+pipeValve3.pipe.L
+pipeValve3.pipe.ZL
+pipeValve3.pipe.ZR
+pipeValve3.pipe.Q_start
+pipeValve3.pipe.p_start
+pipeValve3.pipe.T_start
+pipeValve3.pipe.steadyState
+pipeValve3.pipe.pipeRoughness
+pipeValve3.pipe.constantTemperature
+pipeValve3.pipe.gasPU
+pipeValve3.pipe.tubeElasticity
+pipeValve3.pipe.showDataInIcon
+pipeValve3.pipe.enable_dataVizPort_upper
+pipeValve3.pipe.enable_dataVizPort_lower
+pipeValve3.closedVol.paraOption
+pipeValve3.closedVol.D
+pipeValve3.closedVol.Ac
+pipeValve3.closedVol.L
+pipeValve3.closedVol.gasPU
+pipeValve3.closedVol.dVdp
+pipeValve3.closedVol.p_start
+pipeValve3.closedVol.T_start
+pipeValve3.closedVol.steadyState
+pipeValve3.closedVol.constantTemperature
+pipeValve3.closedVol.include_Ekin
+pipeValve3.closedVol.d
+pipeValve3.closedVol.M
+pipeValve3.closedVol.cv
+pipeValve3.closedVol.betaBulk
+pipeValve3.closedVol.alphaT
+pipeValve3.closedVol.v
+pipeValve3.closedVol.H
+pipeValve3.closedVol.kappa
+pipeValve3.closedVol.sum_m
+pipeValve3.closedVol.sum_H_flow
+pipeValve3.closedVol.sum_E
+pipeValve3.closedVol.H_flow_portA
+pipeValve3.closedVol.H_flow_portB
+pipeValve3.closedVol.A
+pipeValve3.closedVol.Vol
+pipeValve3.closedVol.der_p
+pipeValve3.closedVol.vIn
+pipeValve3.closedVol.der_Vol
+pipeValve3.closedVol.state.p
+pipeValve3.closedVol.state.T
+pipeValve3.closedVol.state.X[1]
+pipeValve3.closedVol.p
+pipeValve3.closedVol.der(p)
+pipeValve3.closedVol.T
+pipeValve3.closedVol.der(T)
+pipeValve3.closedVol.a.X_outflow[1]
+pipeValve3.closedVol.b.X_outflow[1]
+pipeValve3.valve.summary.dp_valve
+pipeValve3.valve.noReturn
+pipeValve3.valve.m_dot_nom
+pipeValve3.valve.dp_nom
+pipeValve3.valve.d_nom
+pipeValve3.valve.open_nom
+pipeValve3.valve.steadyState
+pipeValve3.valve.Q_start
+pipeValve3.valve.mdot_start
+pipeValve3.valve.dp_reg
+pipeValve3.valve.T_filter
+pipeValve3.valve.AreaNom
+pipeValve3.valve.dp
+pipeValve3.valve.mIn
+pipeValve3.valve.der(mIn)
+pipeValve3.valve.vInDp
+pipeValve3.valve.vOut
+pipeValve3.valve.state.X[1]
+pipeValve3.valve.d
+pipeValve3.valve.recIn
+pipeValve3.valve.A
+pipeValve3.valve.a.X_outflow[1]
+pipeValve3.valve.b.X_outflow[1]
+pipeValve3.valve.recFactors[1]
+pipeValve3.valve.recFactors[2]
+pipeValve3.valve.areaRec[1]
+pipeValve3.valve.recFactor1[1]
+pipeValve3.valve.recFactor1[2]
+pipeValve3.horizontalIcon
+pipeValve3.a.h_outflow
+pipeValve3.a.X_outflow[1]
+pipeValve3.b.h_outflow
+pipeValve3.b.X_outflow[1]
+pipeValve3.n
+pipeValve3.L
+pipeValve3.ZL
+pipeValve3.ZR
+pipeValve3.Q_start
+pipeValve3.p_start
+pipeValve3.T_start
+pipeValve3.steadyState
+pipeValve3.pipeRoughness
+pipeValve3.constantTemperature
+pipeValve3.gasPU
+pipeValve3.tubeElasticity
+pipeValve3.showDataInIcon
+pipeValve3.enable_dataVizPort_upper
+pipeValve3.enable_dataVizPort_lower
 pipe.tubeSeg[1].No_Return
 pipe.tubeSeg[1].L
 pipe.tubeSeg[1].D[1]
@@ -2030,8 +2376,698 @@ pipeValve2.pipe.volSeg[3].T
 pipeValve2.pipe.volSeg[3].der(T)
 pipeValve2.pipe.volSeg[3].a.X_outflow[1]
 pipeValve2.pipe.volSeg[3].b.X_outflow[1]
+pipe3.tubeSeg[1].No_Return
+pipe3.tubeSeg[1].L
+pipe3.tubeSeg[1].D[1]
+pipe3.tubeSeg[1].D[2]
+pipe3.tubeSeg[1].Dz
+pipe3.tubeSeg[1].pipeRoughness
+pipe3.tubeSeg[1].lossFactors[1]
+pipe3.tubeSeg[1].lossFactors[2]
+pipe3.tubeSeg[1].lossInPipe
+pipe3.tubeSeg[1].QlossFactor
+pipe3.tubeSeg[1].steadyState
+pipe3.tubeSeg[1].Q_start
+pipe3.tubeSeg[1].mdot_start
+pipe3.tubeSeg[1].V
+pipe3.tubeSeg[1].m_dot
+pipe3.tubeSeg[1].der(m_dot)
+pipe3.tubeSeg[1].c
+pipe3.tubeSeg[1].phi
+pipe3.tubeSeg[1].A[1]
+pipe3.tubeSeg[1].A[2]
+pipe3.tubeSeg[1].ratA
+pipe3.tubeSeg[1].actA
+pipe3.tubeSeg[1].avgD
+pipe3.tubeSeg[1].recFactors[1]
+pipe3.tubeSeg[1].recFactors[2]
+pipe3.tubeSeg[1].recFactors[3]
+pipe3.tubeSeg[1].recFactors[4]
+pipe3.tubeSeg[1].kQ
+pipe3.tubeSeg[1].sumF
+pipe3.tubeSeg[1].Fmv
+pipe3.tubeSeg[1].vIn
+pipe3.tubeSeg[1].vOut
+pipe3.tubeSeg[1].fricPara[1]
+pipe3.tubeSeg[1].fricPara[2]
+pipe3.tubeSeg[1].fricPara[3]
+pipe3.tubeSeg[1].fricPara[4]
+pipe3.tubeSeg[1].fricPara[5]
+pipe3.tubeSeg[1].fricPara[6]
+pipe3.tubeSeg[1].fricPara[7]
+pipe3.tubeSeg[1].fricPara[8]
+pipe3.tubeSeg[1].fricPara[9]
+pipe3.tubeSeg[1].fricPara[10]
+pipe3.tubeSeg[1].rec[1]
+pipe3.tubeSeg[1].rec[2]
+pipe3.tubeSeg[1].Ffric
+pipe3.tubeSeg[1].Fdp
+pipe3.tubeSeg[1].Fz
+pipe3.tubeSeg[1].d
+pipe3.tubeSeg[1].v
+pipe3.tubeSeg[1].cv
+pipe3.tubeSeg[1].Re
+pipe3.tubeSeg[1].Re2
+pipe3.tubeSeg[1].state.p
+pipe3.tubeSeg[1].state.T
+pipe3.tubeSeg[1].state.X[1]
+pipe3.tubeSeg[1].a.X_outflow[1]
+pipe3.tubeSeg[1].b.X_outflow[1]
+pipe3.tubeSeg[2].No_Return
+pipe3.tubeSeg[2].L
+pipe3.tubeSeg[2].D[1]
+pipe3.tubeSeg[2].D[2]
+pipe3.tubeSeg[2].Dz
+pipe3.tubeSeg[2].pipeRoughness
+pipe3.tubeSeg[2].lossFactors[1]
+pipe3.tubeSeg[2].lossFactors[2]
+pipe3.tubeSeg[2].lossInPipe
+pipe3.tubeSeg[2].QlossFactor
+pipe3.tubeSeg[2].steadyState
+pipe3.tubeSeg[2].Q_start
+pipe3.tubeSeg[2].mdot_start
+pipe3.tubeSeg[2].V
+pipe3.tubeSeg[2].m_dot
+pipe3.tubeSeg[2].der(m_dot)
+pipe3.tubeSeg[2].Q
+pipe3.tubeSeg[2].c
+pipe3.tubeSeg[2].phi
+pipe3.tubeSeg[2].A[1]
+pipe3.tubeSeg[2].A[2]
+pipe3.tubeSeg[2].ratA
+pipe3.tubeSeg[2].actA
+pipe3.tubeSeg[2].avgD
+pipe3.tubeSeg[2].recFactors[1]
+pipe3.tubeSeg[2].recFactors[2]
+pipe3.tubeSeg[2].recFactors[3]
+pipe3.tubeSeg[2].recFactors[4]
+pipe3.tubeSeg[2].kQ
+pipe3.tubeSeg[2].sumF
+pipe3.tubeSeg[2].Fmv
+pipe3.tubeSeg[2].vIn
+pipe3.tubeSeg[2].vOut
+pipe3.tubeSeg[2].fricPara[1]
+pipe3.tubeSeg[2].fricPara[2]
+pipe3.tubeSeg[2].fricPara[3]
+pipe3.tubeSeg[2].fricPara[4]
+pipe3.tubeSeg[2].fricPara[5]
+pipe3.tubeSeg[2].fricPara[6]
+pipe3.tubeSeg[2].fricPara[7]
+pipe3.tubeSeg[2].fricPara[8]
+pipe3.tubeSeg[2].fricPara[9]
+pipe3.tubeSeg[2].fricPara[10]
+pipe3.tubeSeg[2].rec[1]
+pipe3.tubeSeg[2].rec[2]
+pipe3.tubeSeg[2].Ffric
+pipe3.tubeSeg[2].Fdp
+pipe3.tubeSeg[2].Fz
+pipe3.tubeSeg[2].d
+pipe3.tubeSeg[2].v
+pipe3.tubeSeg[2].cv
+pipe3.tubeSeg[2].Re
+pipe3.tubeSeg[2].Re2
+pipe3.tubeSeg[2].state.p
+pipe3.tubeSeg[2].state.T
+pipe3.tubeSeg[2].state.X[1]
+pipe3.tubeSeg[2].a.h_outflow
+pipe3.tubeSeg[2].a.X_outflow[1]
+pipe3.tubeSeg[2].b.X_outflow[1]
+pipe3.tubeSeg[3].No_Return
+pipe3.tubeSeg[3].L
+pipe3.tubeSeg[3].D[1]
+pipe3.tubeSeg[3].D[2]
+pipe3.tubeSeg[3].Dz
+pipe3.tubeSeg[3].pipeRoughness
+pipe3.tubeSeg[3].lossFactors[1]
+pipe3.tubeSeg[3].lossFactors[2]
+pipe3.tubeSeg[3].lossInPipe
+pipe3.tubeSeg[3].QlossFactor
+pipe3.tubeSeg[3].steadyState
+pipe3.tubeSeg[3].Q_start
+pipe3.tubeSeg[3].mdot_start
+pipe3.tubeSeg[3].V
+pipe3.tubeSeg[3].m_dot
+pipe3.tubeSeg[3].der(m_dot)
+pipe3.tubeSeg[3].Q
+pipe3.tubeSeg[3].c
+pipe3.tubeSeg[3].phi
+pipe3.tubeSeg[3].A[1]
+pipe3.tubeSeg[3].A[2]
+pipe3.tubeSeg[3].ratA
+pipe3.tubeSeg[3].actA
+pipe3.tubeSeg[3].avgD
+pipe3.tubeSeg[3].recFactors[1]
+pipe3.tubeSeg[3].recFactors[2]
+pipe3.tubeSeg[3].recFactors[3]
+pipe3.tubeSeg[3].recFactors[4]
+pipe3.tubeSeg[3].kQ
+pipe3.tubeSeg[3].sumF
+pipe3.tubeSeg[3].Fmv
+pipe3.tubeSeg[3].vIn
+pipe3.tubeSeg[3].vOut
+pipe3.tubeSeg[3].fricPara[1]
+pipe3.tubeSeg[3].fricPara[2]
+pipe3.tubeSeg[3].fricPara[3]
+pipe3.tubeSeg[3].fricPara[4]
+pipe3.tubeSeg[3].fricPara[5]
+pipe3.tubeSeg[3].fricPara[6]
+pipe3.tubeSeg[3].fricPara[7]
+pipe3.tubeSeg[3].fricPara[8]
+pipe3.tubeSeg[3].fricPara[9]
+pipe3.tubeSeg[3].fricPara[10]
+pipe3.tubeSeg[3].rec[1]
+pipe3.tubeSeg[3].rec[2]
+pipe3.tubeSeg[3].Ffric
+pipe3.tubeSeg[3].Fdp
+pipe3.tubeSeg[3].Fz
+pipe3.tubeSeg[3].d
+pipe3.tubeSeg[3].v
+pipe3.tubeSeg[3].cv
+pipe3.tubeSeg[3].Re
+pipe3.tubeSeg[3].Re2
+pipe3.tubeSeg[3].state.p
+pipe3.tubeSeg[3].state.T
+pipe3.tubeSeg[3].state.X[1]
+pipe3.tubeSeg[3].a.X_outflow[1]
+pipe3.tubeSeg[3].b.X_outflow[1]
+pipe3.tubeSeg[4].No_Return
+pipe3.tubeSeg[4].L
+pipe3.tubeSeg[4].D[1]
+pipe3.tubeSeg[4].D[2]
+pipe3.tubeSeg[4].Dz
+pipe3.tubeSeg[4].pipeRoughness
+pipe3.tubeSeg[4].lossFactors[1]
+pipe3.tubeSeg[4].lossFactors[2]
+pipe3.tubeSeg[4].lossInPipe
+pipe3.tubeSeg[4].QlossFactor
+pipe3.tubeSeg[4].steadyState
+pipe3.tubeSeg[4].Q_start
+pipe3.tubeSeg[4].mdot_start
+pipe3.tubeSeg[4].V
+pipe3.tubeSeg[4].m_dot
+pipe3.tubeSeg[4].der(m_dot)
+pipe3.tubeSeg[4].c
+pipe3.tubeSeg[4].phi
+pipe3.tubeSeg[4].A[1]
+pipe3.tubeSeg[4].A[2]
+pipe3.tubeSeg[4].ratA
+pipe3.tubeSeg[4].actA
+pipe3.tubeSeg[4].avgD
+pipe3.tubeSeg[4].recFactors[1]
+pipe3.tubeSeg[4].recFactors[2]
+pipe3.tubeSeg[4].recFactors[3]
+pipe3.tubeSeg[4].recFactors[4]
+pipe3.tubeSeg[4].kQ
+pipe3.tubeSeg[4].sumF
+pipe3.tubeSeg[4].Fmv
+pipe3.tubeSeg[4].vIn
+pipe3.tubeSeg[4].vOut
+pipe3.tubeSeg[4].fricPara[1]
+pipe3.tubeSeg[4].fricPara[2]
+pipe3.tubeSeg[4].fricPara[3]
+pipe3.tubeSeg[4].fricPara[4]
+pipe3.tubeSeg[4].fricPara[5]
+pipe3.tubeSeg[4].fricPara[6]
+pipe3.tubeSeg[4].fricPara[7]
+pipe3.tubeSeg[4].fricPara[8]
+pipe3.tubeSeg[4].fricPara[9]
+pipe3.tubeSeg[4].fricPara[10]
+pipe3.tubeSeg[4].rec[1]
+pipe3.tubeSeg[4].rec[2]
+pipe3.tubeSeg[4].Ffric
+pipe3.tubeSeg[4].Fdp
+pipe3.tubeSeg[4].Fz
+pipe3.tubeSeg[4].d
+pipe3.tubeSeg[4].v
+pipe3.tubeSeg[4].cv
+pipe3.tubeSeg[4].Re
+pipe3.tubeSeg[4].Re2
+pipe3.tubeSeg[4].state.p
+pipe3.tubeSeg[4].state.T
+pipe3.tubeSeg[4].state.X[1]
+pipe3.tubeSeg[4].a.X_outflow[1]
+pipe3.tubeSeg[4].b.X_outflow[1]
+pipe3.volSeg[1].paraOption
+pipe3.volSeg[1].D
+pipe3.volSeg[1].Ac
+pipe3.volSeg[1].L
+pipe3.volSeg[1].gasPU
+pipe3.volSeg[1].dVdp
+pipe3.volSeg[1].p_start
+pipe3.volSeg[1].T_start
+pipe3.volSeg[1].steadyState
+pipe3.volSeg[1].constantTemperature
+pipe3.volSeg[1].include_Ekin
+pipe3.volSeg[1].d
+pipe3.volSeg[1].M
+pipe3.volSeg[1].cv
+pipe3.volSeg[1].betaBulk
+pipe3.volSeg[1].alphaT
+pipe3.volSeg[1].v
+pipe3.volSeg[1].H
+pipe3.volSeg[1].kappa
+pipe3.volSeg[1].sum_m
+pipe3.volSeg[1].sum_H_flow
+pipe3.volSeg[1].sum_E
+pipe3.volSeg[1].H_flow_portA
+pipe3.volSeg[1].H_flow_portB
+pipe3.volSeg[1].A
+pipe3.volSeg[1].Vol
+pipe3.volSeg[1].der_p
+pipe3.volSeg[1].vIn
+pipe3.volSeg[1].der_Vol
+pipe3.volSeg[1].state.p
+pipe3.volSeg[1].state.T
+pipe3.volSeg[1].state.X[1]
+pipe3.volSeg[1].p
+pipe3.volSeg[1].der(p)
+pipe3.volSeg[1].T
+pipe3.volSeg[1].der(T)
+pipe3.volSeg[1].a.X_outflow[1]
+pipe3.volSeg[1].b.X_outflow[1]
+pipe3.volSeg[2].paraOption
+pipe3.volSeg[2].D
+pipe3.volSeg[2].Ac
+pipe3.volSeg[2].L
+pipe3.volSeg[2].gasPU
+pipe3.volSeg[2].dVdp
+pipe3.volSeg[2].p_start
+pipe3.volSeg[2].T_start
+pipe3.volSeg[2].steadyState
+pipe3.volSeg[2].constantTemperature
+pipe3.volSeg[2].include_Ekin
+pipe3.volSeg[2].d
+pipe3.volSeg[2].M
+pipe3.volSeg[2].cv
+pipe3.volSeg[2].betaBulk
+pipe3.volSeg[2].alphaT
+pipe3.volSeg[2].v
+pipe3.volSeg[2].H
+pipe3.volSeg[2].kappa
+pipe3.volSeg[2].sum_m
+pipe3.volSeg[2].sum_H_flow
+pipe3.volSeg[2].sum_E
+pipe3.volSeg[2].H_flow_portA
+pipe3.volSeg[2].H_flow_portB
+pipe3.volSeg[2].A
+pipe3.volSeg[2].Vol
+pipe3.volSeg[2].der_p
+pipe3.volSeg[2].vIn
+pipe3.volSeg[2].der_Vol
+pipe3.volSeg[2].state.p
+pipe3.volSeg[2].state.T
+pipe3.volSeg[2].state.X[1]
+pipe3.volSeg[2].p
+pipe3.volSeg[2].der(p)
+pipe3.volSeg[2].T
+pipe3.volSeg[2].der(T)
+pipe3.volSeg[2].a.X_outflow[1]
+pipe3.volSeg[2].b.X_outflow[1]
+pipe3.volSeg[3].paraOption
+pipe3.volSeg[3].D
+pipe3.volSeg[3].Ac
+pipe3.volSeg[3].L
+pipe3.volSeg[3].gasPU
+pipe3.volSeg[3].dVdp
+pipe3.volSeg[3].p_start
+pipe3.volSeg[3].T_start
+pipe3.volSeg[3].steadyState
+pipe3.volSeg[3].constantTemperature
+pipe3.volSeg[3].include_Ekin
+pipe3.volSeg[3].d
+pipe3.volSeg[3].M
+pipe3.volSeg[3].cv
+pipe3.volSeg[3].betaBulk
+pipe3.volSeg[3].alphaT
+pipe3.volSeg[3].v
+pipe3.volSeg[3].H
+pipe3.volSeg[3].kappa
+pipe3.volSeg[3].sum_m
+pipe3.volSeg[3].sum_H_flow
+pipe3.volSeg[3].sum_E
+pipe3.volSeg[3].H_flow_portA
+pipe3.volSeg[3].H_flow_portB
+pipe3.volSeg[3].A
+pipe3.volSeg[3].Vol
+pipe3.volSeg[3].der_p
+pipe3.volSeg[3].vIn
+pipe3.volSeg[3].der_Vol
+pipe3.volSeg[3].state.p
+pipe3.volSeg[3].state.T
+pipe3.volSeg[3].state.X[1]
+pipe3.volSeg[3].p
+pipe3.volSeg[3].der(p)
+pipe3.volSeg[3].T
+pipe3.volSeg[3].der(T)
+pipe3.volSeg[3].a.X_outflow[1]
+pipe3.volSeg[3].b.X_outflow[1]
+pipeValve3.pipe.tubeSeg[1].No_Return
+pipeValve3.pipe.tubeSeg[1].L
+pipeValve3.pipe.tubeSeg[1].D[1]
+pipeValve3.pipe.tubeSeg[1].D[2]
+pipeValve3.pipe.tubeSeg[1].Dz
+pipeValve3.pipe.tubeSeg[1].pipeRoughness
+pipeValve3.pipe.tubeSeg[1].lossFactors[1]
+pipeValve3.pipe.tubeSeg[1].lossFactors[2]
+pipeValve3.pipe.tubeSeg[1].lossInPipe
+pipeValve3.pipe.tubeSeg[1].QlossFactor
+pipeValve3.pipe.tubeSeg[1].steadyState
+pipeValve3.pipe.tubeSeg[1].Q_start
+pipeValve3.pipe.tubeSeg[1].mdot_start
+pipeValve3.pipe.tubeSeg[1].V
+pipeValve3.pipe.tubeSeg[1].m_dot
+pipeValve3.pipe.tubeSeg[1].der(m_dot)
+pipeValve3.pipe.tubeSeg[1].c
+pipeValve3.pipe.tubeSeg[1].phi
+pipeValve3.pipe.tubeSeg[1].A[1]
+pipeValve3.pipe.tubeSeg[1].A[2]
+pipeValve3.pipe.tubeSeg[1].ratA
+pipeValve3.pipe.tubeSeg[1].actA
+pipeValve3.pipe.tubeSeg[1].avgD
+pipeValve3.pipe.tubeSeg[1].recFactors[1]
+pipeValve3.pipe.tubeSeg[1].recFactors[2]
+pipeValve3.pipe.tubeSeg[1].recFactors[3]
+pipeValve3.pipe.tubeSeg[1].recFactors[4]
+pipeValve3.pipe.tubeSeg[1].kQ
+pipeValve3.pipe.tubeSeg[1].sumF
+pipeValve3.pipe.tubeSeg[1].Fmv
+pipeValve3.pipe.tubeSeg[1].vIn
+pipeValve3.pipe.tubeSeg[1].vOut
+pipeValve3.pipe.tubeSeg[1].fricPara[1]
+pipeValve3.pipe.tubeSeg[1].fricPara[2]
+pipeValve3.pipe.tubeSeg[1].fricPara[3]
+pipeValve3.pipe.tubeSeg[1].fricPara[4]
+pipeValve3.pipe.tubeSeg[1].fricPara[5]
+pipeValve3.pipe.tubeSeg[1].fricPara[6]
+pipeValve3.pipe.tubeSeg[1].fricPara[7]
+pipeValve3.pipe.tubeSeg[1].fricPara[8]
+pipeValve3.pipe.tubeSeg[1].fricPara[9]
+pipeValve3.pipe.tubeSeg[1].fricPara[10]
+pipeValve3.pipe.tubeSeg[1].rec[1]
+pipeValve3.pipe.tubeSeg[1].rec[2]
+pipeValve3.pipe.tubeSeg[1].Ffric
+pipeValve3.pipe.tubeSeg[1].Fdp
+pipeValve3.pipe.tubeSeg[1].Fz
+pipeValve3.pipe.tubeSeg[1].d
+pipeValve3.pipe.tubeSeg[1].v
+pipeValve3.pipe.tubeSeg[1].cv
+pipeValve3.pipe.tubeSeg[1].Re
+pipeValve3.pipe.tubeSeg[1].Re2
+pipeValve3.pipe.tubeSeg[1].state.p
+pipeValve3.pipe.tubeSeg[1].state.T
+pipeValve3.pipe.tubeSeg[1].state.X[1]
+pipeValve3.pipe.tubeSeg[1].a.X_outflow[1]
+pipeValve3.pipe.tubeSeg[1].b.X_outflow[1]
+pipeValve3.pipe.tubeSeg[2].No_Return
+pipeValve3.pipe.tubeSeg[2].L
+pipeValve3.pipe.tubeSeg[2].D[1]
+pipeValve3.pipe.tubeSeg[2].D[2]
+pipeValve3.pipe.tubeSeg[2].Dz
+pipeValve3.pipe.tubeSeg[2].pipeRoughness
+pipeValve3.pipe.tubeSeg[2].lossFactors[1]
+pipeValve3.pipe.tubeSeg[2].lossFactors[2]
+pipeValve3.pipe.tubeSeg[2].lossInPipe
+pipeValve3.pipe.tubeSeg[2].QlossFactor
+pipeValve3.pipe.tubeSeg[2].steadyState
+pipeValve3.pipe.tubeSeg[2].Q_start
+pipeValve3.pipe.tubeSeg[2].mdot_start
+pipeValve3.pipe.tubeSeg[2].V
+pipeValve3.pipe.tubeSeg[2].m_dot
+pipeValve3.pipe.tubeSeg[2].der(m_dot)
+pipeValve3.pipe.tubeSeg[2].Q
+pipeValve3.pipe.tubeSeg[2].c
+pipeValve3.pipe.tubeSeg[2].phi
+pipeValve3.pipe.tubeSeg[2].A[1]
+pipeValve3.pipe.tubeSeg[2].A[2]
+pipeValve3.pipe.tubeSeg[2].ratA
+pipeValve3.pipe.tubeSeg[2].actA
+pipeValve3.pipe.tubeSeg[2].avgD
+pipeValve3.pipe.tubeSeg[2].recFactors[1]
+pipeValve3.pipe.tubeSeg[2].recFactors[2]
+pipeValve3.pipe.tubeSeg[2].recFactors[3]
+pipeValve3.pipe.tubeSeg[2].recFactors[4]
+pipeValve3.pipe.tubeSeg[2].kQ
+pipeValve3.pipe.tubeSeg[2].sumF
+pipeValve3.pipe.tubeSeg[2].Fmv
+pipeValve3.pipe.tubeSeg[2].vIn
+pipeValve3.pipe.tubeSeg[2].vOut
+pipeValve3.pipe.tubeSeg[2].fricPara[1]
+pipeValve3.pipe.tubeSeg[2].fricPara[2]
+pipeValve3.pipe.tubeSeg[2].fricPara[3]
+pipeValve3.pipe.tubeSeg[2].fricPara[4]
+pipeValve3.pipe.tubeSeg[2].fricPara[5]
+pipeValve3.pipe.tubeSeg[2].fricPara[6]
+pipeValve3.pipe.tubeSeg[2].fricPara[7]
+pipeValve3.pipe.tubeSeg[2].fricPara[8]
+pipeValve3.pipe.tubeSeg[2].fricPara[9]
+pipeValve3.pipe.tubeSeg[2].fricPara[10]
+pipeValve3.pipe.tubeSeg[2].rec[1]
+pipeValve3.pipe.tubeSeg[2].rec[2]
+pipeValve3.pipe.tubeSeg[2].Ffric
+pipeValve3.pipe.tubeSeg[2].Fdp
+pipeValve3.pipe.tubeSeg[2].Fz
+pipeValve3.pipe.tubeSeg[2].d
+pipeValve3.pipe.tubeSeg[2].v
+pipeValve3.pipe.tubeSeg[2].cv
+pipeValve3.pipe.tubeSeg[2].Re
+pipeValve3.pipe.tubeSeg[2].Re2
+pipeValve3.pipe.tubeSeg[2].state.p
+pipeValve3.pipe.tubeSeg[2].state.T
+pipeValve3.pipe.tubeSeg[2].state.X[1]
+pipeValve3.pipe.tubeSeg[2].a.h_outflow
+pipeValve3.pipe.tubeSeg[2].a.X_outflow[1]
+pipeValve3.pipe.tubeSeg[2].b.X_outflow[1]
+pipeValve3.pipe.tubeSeg[3].No_Return
+pipeValve3.pipe.tubeSeg[3].L
+pipeValve3.pipe.tubeSeg[3].D[1]
+pipeValve3.pipe.tubeSeg[3].D[2]
+pipeValve3.pipe.tubeSeg[3].Dz
+pipeValve3.pipe.tubeSeg[3].pipeRoughness
+pipeValve3.pipe.tubeSeg[3].lossFactors[1]
+pipeValve3.pipe.tubeSeg[3].lossFactors[2]
+pipeValve3.pipe.tubeSeg[3].lossInPipe
+pipeValve3.pipe.tubeSeg[3].QlossFactor
+pipeValve3.pipe.tubeSeg[3].steadyState
+pipeValve3.pipe.tubeSeg[3].Q_start
+pipeValve3.pipe.tubeSeg[3].mdot_start
+pipeValve3.pipe.tubeSeg[3].V
+pipeValve3.pipe.tubeSeg[3].m_dot
+pipeValve3.pipe.tubeSeg[3].der(m_dot)
+pipeValve3.pipe.tubeSeg[3].Q
+pipeValve3.pipe.tubeSeg[3].c
+pipeValve3.pipe.tubeSeg[3].phi
+pipeValve3.pipe.tubeSeg[3].A[1]
+pipeValve3.pipe.tubeSeg[3].A[2]
+pipeValve3.pipe.tubeSeg[3].ratA
+pipeValve3.pipe.tubeSeg[3].actA
+pipeValve3.pipe.tubeSeg[3].avgD
+pipeValve3.pipe.tubeSeg[3].recFactors[1]
+pipeValve3.pipe.tubeSeg[3].recFactors[2]
+pipeValve3.pipe.tubeSeg[3].recFactors[3]
+pipeValve3.pipe.tubeSeg[3].recFactors[4]
+pipeValve3.pipe.tubeSeg[3].kQ
+pipeValve3.pipe.tubeSeg[3].sumF
+pipeValve3.pipe.tubeSeg[3].Fmv
+pipeValve3.pipe.tubeSeg[3].vIn
+pipeValve3.pipe.tubeSeg[3].vOut
+pipeValve3.pipe.tubeSeg[3].fricPara[1]
+pipeValve3.pipe.tubeSeg[3].fricPara[2]
+pipeValve3.pipe.tubeSeg[3].fricPara[3]
+pipeValve3.pipe.tubeSeg[3].fricPara[4]
+pipeValve3.pipe.tubeSeg[3].fricPara[5]
+pipeValve3.pipe.tubeSeg[3].fricPara[6]
+pipeValve3.pipe.tubeSeg[3].fricPara[7]
+pipeValve3.pipe.tubeSeg[3].fricPara[8]
+pipeValve3.pipe.tubeSeg[3].fricPara[9]
+pipeValve3.pipe.tubeSeg[3].fricPara[10]
+pipeValve3.pipe.tubeSeg[3].rec[1]
+pipeValve3.pipe.tubeSeg[3].rec[2]
+pipeValve3.pipe.tubeSeg[3].Ffric
+pipeValve3.pipe.tubeSeg[3].Fdp
+pipeValve3.pipe.tubeSeg[3].Fz
+pipeValve3.pipe.tubeSeg[3].d
+pipeValve3.pipe.tubeSeg[3].v
+pipeValve3.pipe.tubeSeg[3].cv
+pipeValve3.pipe.tubeSeg[3].Re
+pipeValve3.pipe.tubeSeg[3].Re2
+pipeValve3.pipe.tubeSeg[3].state.p
+pipeValve3.pipe.tubeSeg[3].state.T
+pipeValve3.pipe.tubeSeg[3].state.X[1]
+pipeValve3.pipe.tubeSeg[3].a.X_outflow[1]
+pipeValve3.pipe.tubeSeg[3].b.X_outflow[1]
+pipeValve3.pipe.tubeSeg[4].No_Return
+pipeValve3.pipe.tubeSeg[4].L
+pipeValve3.pipe.tubeSeg[4].D[1]
+pipeValve3.pipe.tubeSeg[4].D[2]
+pipeValve3.pipe.tubeSeg[4].Dz
+pipeValve3.pipe.tubeSeg[4].pipeRoughness
+pipeValve3.pipe.tubeSeg[4].lossFactors[1]
+pipeValve3.pipe.tubeSeg[4].lossFactors[2]
+pipeValve3.pipe.tubeSeg[4].lossInPipe
+pipeValve3.pipe.tubeSeg[4].QlossFactor
+pipeValve3.pipe.tubeSeg[4].steadyState
+pipeValve3.pipe.tubeSeg[4].Q_start
+pipeValve3.pipe.tubeSeg[4].mdot_start
+pipeValve3.pipe.tubeSeg[4].V
+pipeValve3.pipe.tubeSeg[4].m_dot
+pipeValve3.pipe.tubeSeg[4].der(m_dot)
+pipeValve3.pipe.tubeSeg[4].c
+pipeValve3.pipe.tubeSeg[4].phi
+pipeValve3.pipe.tubeSeg[4].A[1]
+pipeValve3.pipe.tubeSeg[4].A[2]
+pipeValve3.pipe.tubeSeg[4].ratA
+pipeValve3.pipe.tubeSeg[4].actA
+pipeValve3.pipe.tubeSeg[4].avgD
+pipeValve3.pipe.tubeSeg[4].recFactors[1]
+pipeValve3.pipe.tubeSeg[4].recFactors[2]
+pipeValve3.pipe.tubeSeg[4].recFactors[3]
+pipeValve3.pipe.tubeSeg[4].recFactors[4]
+pipeValve3.pipe.tubeSeg[4].kQ
+pipeValve3.pipe.tubeSeg[4].sumF
+pipeValve3.pipe.tubeSeg[4].Fmv
+pipeValve3.pipe.tubeSeg[4].vIn
+pipeValve3.pipe.tubeSeg[4].vOut
+pipeValve3.pipe.tubeSeg[4].fricPara[1]
+pipeValve3.pipe.tubeSeg[4].fricPara[2]
+pipeValve3.pipe.tubeSeg[4].fricPara[3]
+pipeValve3.pipe.tubeSeg[4].fricPara[4]
+pipeValve3.pipe.tubeSeg[4].fricPara[5]
+pipeValve3.pipe.tubeSeg[4].fricPara[6]
+pipeValve3.pipe.tubeSeg[4].fricPara[7]
+pipeValve3.pipe.tubeSeg[4].fricPara[8]
+pipeValve3.pipe.tubeSeg[4].fricPara[9]
+pipeValve3.pipe.tubeSeg[4].fricPara[10]
+pipeValve3.pipe.tubeSeg[4].rec[1]
+pipeValve3.pipe.tubeSeg[4].rec[2]
+pipeValve3.pipe.tubeSeg[4].Ffric
+pipeValve3.pipe.tubeSeg[4].Fdp
+pipeValve3.pipe.tubeSeg[4].Fz
+pipeValve3.pipe.tubeSeg[4].d
+pipeValve3.pipe.tubeSeg[4].v
+pipeValve3.pipe.tubeSeg[4].cv
+pipeValve3.pipe.tubeSeg[4].Re
+pipeValve3.pipe.tubeSeg[4].Re2
+pipeValve3.pipe.tubeSeg[4].state.p
+pipeValve3.pipe.tubeSeg[4].state.T
+pipeValve3.pipe.tubeSeg[4].state.X[1]
+pipeValve3.pipe.tubeSeg[4].a.X_outflow[1]
+pipeValve3.pipe.tubeSeg[4].b.X_outflow[1]
+pipeValve3.pipe.volSeg[1].paraOption
+pipeValve3.pipe.volSeg[1].D
+pipeValve3.pipe.volSeg[1].Ac
+pipeValve3.pipe.volSeg[1].L
+pipeValve3.pipe.volSeg[1].gasPU
+pipeValve3.pipe.volSeg[1].dVdp
+pipeValve3.pipe.volSeg[1].p_start
+pipeValve3.pipe.volSeg[1].T_start
+pipeValve3.pipe.volSeg[1].steadyState
+pipeValve3.pipe.volSeg[1].constantTemperature
+pipeValve3.pipe.volSeg[1].include_Ekin
+pipeValve3.pipe.volSeg[1].d
+pipeValve3.pipe.volSeg[1].M
+pipeValve3.pipe.volSeg[1].cv
+pipeValve3.pipe.volSeg[1].betaBulk
+pipeValve3.pipe.volSeg[1].alphaT
+pipeValve3.pipe.volSeg[1].v
+pipeValve3.pipe.volSeg[1].H
+pipeValve3.pipe.volSeg[1].kappa
+pipeValve3.pipe.volSeg[1].sum_m
+pipeValve3.pipe.volSeg[1].sum_H_flow
+pipeValve3.pipe.volSeg[1].sum_E
+pipeValve3.pipe.volSeg[1].H_flow_portA
+pipeValve3.pipe.volSeg[1].H_flow_portB
+pipeValve3.pipe.volSeg[1].A
+pipeValve3.pipe.volSeg[1].Vol
+pipeValve3.pipe.volSeg[1].der_p
+pipeValve3.pipe.volSeg[1].vIn
+pipeValve3.pipe.volSeg[1].der_Vol
+pipeValve3.pipe.volSeg[1].state.p
+pipeValve3.pipe.volSeg[1].state.T
+pipeValve3.pipe.volSeg[1].state.X[1]
+pipeValve3.pipe.volSeg[1].p
+pipeValve3.pipe.volSeg[1].der(p)
+pipeValve3.pipe.volSeg[1].T
+pipeValve3.pipe.volSeg[1].der(T)
+pipeValve3.pipe.volSeg[1].a.X_outflow[1]
+pipeValve3.pipe.volSeg[1].b.X_outflow[1]
+pipeValve3.pipe.volSeg[2].paraOption
+pipeValve3.pipe.volSeg[2].D
+pipeValve3.pipe.volSeg[2].Ac
+pipeValve3.pipe.volSeg[2].L
+pipeValve3.pipe.volSeg[2].gasPU
+pipeValve3.pipe.volSeg[2].dVdp
+pipeValve3.pipe.volSeg[2].p_start
+pipeValve3.pipe.volSeg[2].T_start
+pipeValve3.pipe.volSeg[2].steadyState
+pipeValve3.pipe.volSeg[2].constantTemperature
+pipeValve3.pipe.volSeg[2].include_Ekin
+pipeValve3.pipe.volSeg[2].d
+pipeValve3.pipe.volSeg[2].M
+pipeValve3.pipe.volSeg[2].cv
+pipeValve3.pipe.volSeg[2].betaBulk
+pipeValve3.pipe.volSeg[2].alphaT
+pipeValve3.pipe.volSeg[2].v
+pipeValve3.pipe.volSeg[2].H
+pipeValve3.pipe.volSeg[2].kappa
+pipeValve3.pipe.volSeg[2].sum_m
+pipeValve3.pipe.volSeg[2].sum_H_flow
+pipeValve3.pipe.volSeg[2].sum_E
+pipeValve3.pipe.volSeg[2].H_flow_portA
+pipeValve3.pipe.volSeg[2].H_flow_portB
+pipeValve3.pipe.volSeg[2].A
+pipeValve3.pipe.volSeg[2].Vol
+pipeValve3.pipe.volSeg[2].der_p
+pipeValve3.pipe.volSeg[2].vIn
+pipeValve3.pipe.volSeg[2].der_Vol
+pipeValve3.pipe.volSeg[2].state.p
+pipeValve3.pipe.volSeg[2].state.T
+pipeValve3.pipe.volSeg[2].state.X[1]
+pipeValve3.pipe.volSeg[2].p
+pipeValve3.pipe.volSeg[2].der(p)
+pipeValve3.pipe.volSeg[2].T
+pipeValve3.pipe.volSeg[2].der(T)
+pipeValve3.pipe.volSeg[2].a.X_outflow[1]
+pipeValve3.pipe.volSeg[2].b.X_outflow[1]
+pipeValve3.pipe.volSeg[3].paraOption
+pipeValve3.pipe.volSeg[3].D
+pipeValve3.pipe.volSeg[3].Ac
+pipeValve3.pipe.volSeg[3].L
+pipeValve3.pipe.volSeg[3].gasPU
+pipeValve3.pipe.volSeg[3].dVdp
+pipeValve3.pipe.volSeg[3].p_start
+pipeValve3.pipe.volSeg[3].T_start
+pipeValve3.pipe.volSeg[3].steadyState
+pipeValve3.pipe.volSeg[3].constantTemperature
+pipeValve3.pipe.volSeg[3].include_Ekin
+pipeValve3.pipe.volSeg[3].d
+pipeValve3.pipe.volSeg[3].M
+pipeValve3.pipe.volSeg[3].cv
+pipeValve3.pipe.volSeg[3].betaBulk
+pipeValve3.pipe.volSeg[3].alphaT
+pipeValve3.pipe.volSeg[3].v
+pipeValve3.pipe.volSeg[3].H
+pipeValve3.pipe.volSeg[3].kappa
+pipeValve3.pipe.volSeg[3].sum_m
+pipeValve3.pipe.volSeg[3].sum_H_flow
+pipeValve3.pipe.volSeg[3].sum_E
+pipeValve3.pipe.volSeg[3].H_flow_portA
+pipeValve3.pipe.volSeg[3].H_flow_portB
+pipeValve3.pipe.volSeg[3].A
+pipeValve3.pipe.volSeg[3].Vol
+pipeValve3.pipe.volSeg[3].der_p
+pipeValve3.pipe.volSeg[3].vIn
+pipeValve3.pipe.volSeg[3].der_Vol
+pipeValve3.pipe.volSeg[3].state.p
+pipeValve3.pipe.volSeg[3].state.T
+pipeValve3.pipe.volSeg[3].state.X[1]
+pipeValve3.pipe.volSeg[3].p
+pipeValve3.pipe.volSeg[3].der(p)
+pipeValve3.pipe.volSeg[3].T
+pipeValve3.pipe.volSeg[3].der(T)
+pipeValve3.pipe.volSeg[3].a.X_outflow[1]
+pipeValve3.pipe.volSeg[3].b.X_outflow[1]
 
-double initialValue(1927,6)
+double initialValue(2963,6)
  -1       0                       0                       0                
   1   280   # system_HPL.gasPU
  -1       0                       0                       0                
@@ -2554,11 +3590,11 @@ double initialValue(1927,6)
   6   260   # sink1.b.h_outflow
   0       1                       0                       1                
   6   260   # sink1.b.X_outflow[1]
- -1  9.8999999999999999E-01       0                       0                
+ -1 -9.0000000000000002E-01       0                       0                
   1   280   # ramp.height
  -1      10                       0                 1.0000000000000000E+100
   1   280   # ramp.duration
- -1  1.0000000000000000E-02       0                       0                
+ -1       1                       0                       0                
   1   280   # ramp.offset
  -1     100                       0                       0                
   1   280   # ramp.startTime
@@ -3126,6 +4162,698 @@ double initialValue(1927,6)
   6   260   # closedVolume.a.X_outflow[1]
   0       1                       0                       1                
   6   260   # closedVolume.b.X_outflow[1]
+  0       0                       0                       0                
+  6   256   # surgeTank3.summary.L_col
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # surgeTank3.summary.H_col
+  0       0                       0                       0                
+  6   256   # surgeTank3.summary.Q_shaft
+ -1     100                       0                 1.0000000000000000E+100
+  1   280   # surgeTank3.D
+  0      15                       0                 1.0000000000000000E+100
+  6   256   # surgeTank3.deltZ
+ -1       1                       0                       0                
+  1   280   # surgeTank3.H2L
+ -1    1000                       0                       0                
+  1   280   # surgeTank3.Vol
+ -1  100000                       0                       0                
+  1   280   # surgeTank3.p_start
+  0  2.8814999999999998E+02       0                 1.0000000000000000E+100
+  6   256   # surgeTank3.T_start
+  0       1                       0                       0                
+  6   257   # surgeTank3.steadyState
+  0       0                       0                       0                
+  6   256   # surgeTank3.gasPU
+ -1       1                       0                       0                
+  1   281   # surgeTank3.showDataInIcon
+ -1       1                       0                       0                
+  1  1304   # surgeTank3.L_representative
+  0       0                       0                       0                
+  6  1280   # surgeTank3.Ac_representative
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # surgeTank3.startH
+ -1       2                       1                       2                
+  1   282   # surgeTank3.bottomVol.paraOption
+ -1       1                       0                       0                
+  1   280   # surgeTank3.bottomVol.D
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.Ac
+ -1       1                       0                       0                
+  1   280   # surgeTank3.bottomVol.L
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.gasPU
+ -1       0                       0                       0                
+  1   280   # surgeTank3.bottomVol.dVdp
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.p_start
+  0  2.8814999999999998E+02       0                   10000                
+  6   256   # surgeTank3.bottomVol.T_start
+  0       1                       0                       0                
+  6   257   # surgeTank3.bottomVol.steadyState
+  0       1                       0                       0                
+  6   257   # surgeTank3.bottomVol.constantTemperature
+ -1       1                       0                       0                
+  1   281   # surgeTank3.bottomVol.include_Ekin
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # surgeTank3.bottomVol.d
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # surgeTank3.bottomVol.M
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.cv
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.betaBulk
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.alphaT
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # surgeTank3.bottomVol.v
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # surgeTank3.bottomVol.H
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.kappa
+  0       0                       0                       0                
+  6   288   # surgeTank3.bottomVol.sum_m
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.sum_H_flow
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.sum_E
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.H_flow_portA
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.H_flow_portB
+  0       0                       0                       0                
+  6  1280   # surgeTank3.bottomVol.A
+  0       0                       0                       0                
+  6  1280   # surgeTank3.bottomVol.Vol
+  0       0                       0                       0                
+  6  1280   # surgeTank3.bottomVol.der_p
+  0       0                       0                       0                
+  6  1280   # surgeTank3.bottomVol.vIn
+ -1       0                       0                       0                
+  1  1304   # surgeTank3.bottomVol.der_Vol
+  0       0                       0                  1.0000000000000000E+08
+  6   256   # surgeTank3.bottomVol.state.p
+  0     300                       0                   10000                
+  6   256   # surgeTank3.bottomVol.state.T
+  0       1                       0                       1                
+  6   256   # surgeTank3.bottomVol.state.X[1]
+ -1       0                       0                       0                
+  2   272   # surgeTank3.bottomVol.p
+  0       0                       0                       0                
+  3   256   # surgeTank3.bottomVol.der(p)
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # surgeTank3.bottomVol.T
+  0       0                       0                       0                
+  6   256   # surgeTank3.bottomVol.der(T)
+  0       1                       0                       1                
+  6   260   # surgeTank3.bottomVol.a.X_outflow[1]
+  0       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  6   388   # surgeTank3.bottomVol.b.m_flow
+  0       1                       0                       1                
+  6   260   # surgeTank3.bottomVol.b.X_outflow[1]
+ -1       1                       1                       2                
+  1   282   # surgeTank3.surgeShaft.paraOption
+  0       0                       0                       0                
+  6   256   # surgeTank3.surgeShaft.D
+ -1       1                       0                       0                
+  1   280   # surgeTank3.surgeShaft.Ac
+  0      15                       0                 1.0000000000000000E+100
+  6   256   # surgeTank3.surgeShaft.deltZ
+  0  5.0000000000000003E-02  5.0000000000000003E-02 1.0000000000000000E+100
+  6   256   # surgeTank3.surgeShaft.rH2L
+  0  1.0000000000000001E-01       0                       0                
+  6   256   # surgeTank3.surgeShaft.tunnelRoughness
+ -1  5.0000000000000000E-01       0                       0                
+  1   280   # surgeTank3.surgeShaft.locLoss
+ -1       0                       0                       0                
+  1   280   # surgeTank3.surgeShaft.recBot[1]
+ -1       1                       0                       0                
+  1   280   # surgeTank3.surgeShaft.recBot[2]
+  0       0                       0                      15                
+  6   256   # surgeTank3.surgeShaft.startH
+  0       1                       0                       0                
+  6   257   # surgeTank3.surgeShaft.steadyState
+  0       0                       0                       0                
+  6   321   # surgeTank3.surgeShaft.flooded
+  0       0                       0                       0                
+  6   256   # surgeTank3.surgeShaft.H_col
+  0      40                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.K_Lloss
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.L_eff
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.A
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.Lmax
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.Fmv
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.Ffric
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.Fdp
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.Fz
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.sumF
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # surgeTank3.surgeShaft.d
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # surgeTank3.surgeShaft.eta
+  0     300                       0                   10000                
+  6  1280   # surgeTank3.surgeShaft.state.T
+  0       1                       0                       1                
+  6  1280   # surgeTank3.surgeShaft.state.X[1]
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   304   # surgeTank3.surgeShaft.m_dot
+  0       0                       0                       0                
+  3   256   # surgeTank3.surgeShaft.der(m_dot)
+ -1       0                       0                       0                
+  2   272   # surgeTank3.surgeShaft.Lcol
+  0       0                       0                       0                
+  3   256   # surgeTank3.surgeShaft.der(Lcol)
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # surgeTank3.surgeShaft.a.h_outflow
+  0       1                       0                       1                
+  6   260   # surgeTank3.surgeShaft.a.X_outflow[1]
+  0  1.0000000000000001E-01       0                       0                
+  6   256   # surgeTank3.surgeShaft.frictionModel.pipeRoughness
+  0       0                       0                       0                
+  6   256   # surgeTank3.surgeShaft.frictionModel.Re
+  0       0                       0                       0                
+  6   256   # surgeTank3.surgeShaft.frictionModel.lambda2
+  0       0                       0                       0                
+  6   256   # surgeTank3.surgeShaft.frictionModel.Area
+  0  7.9503347316622353E+02       0                       0                
+  6  1280   # surgeTank3.surgeShaft.frictionModel.Re_lam
+  0    4000                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.frictionModel.Re_turb
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.frictionModel.lambda2_turb
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.frictionModel.lambda2_turb_der
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.frictionModel.a[1]
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.frictionModel.a[2]
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.frictionModel.a[3]
+  0       0                       0                       0                
+  6  1280   # surgeTank3.surgeShaft.frictionModel.a[4]
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # surgeTank3.a.h_outflow
+  0       1                       0                       1                
+  6   260   # surgeTank3.a.X_outflow[1]
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # surgeTank3.b.h_outflow
+  0       1                       0                       1                
+  6   260   # surgeTank3.b.X_outflow[1]
+  0       1                       0                       0                
+  6   257   # surgeTank3.constantTemperature
+  0       0                       0                       0                
+  6   257   # source3.paraOption
+ -1  1.0130000000000000E+05       0                  1.0000000000000000E+08
+  1   280   # source3.p_const
+  0  2.8814999999999998E+02       0                 1.0000000000000000E+100
+  6   256   # source3.T_const
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # source3.b.h_outflow
+  0       1                       0                       1                
+  6   260   # source3.b.X_outflow[1]
+  0       0                       0                       0                
+  6   257   # sink3.paraOption
+ -1  1.0130000000000000E+05       0                  1.0000000000000000E+08
+  1   280   # sink3.p_const
+  0  2.8814999999999998E+02       0                 1.0000000000000000E+100
+  6   256   # sink3.T_const
+  0       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  6   388   # sink3.b.m_flow
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # sink3.b.h_outflow
+  0       1                       0                       1                
+  6   260   # sink3.b.X_outflow[1]
+  0       0                       0                       0                
+  6   256   # pipe3.summary.dp_pipe
+  0       0                       0                       0                
+  6   256   # pipe3.summary.Q_in
+  0       0                       0                       0                
+  6   256   # pipe3.summary.Q_out
+ -1       0                       0                       0                
+  1   280   # pipe3.endL[1]
+ -1       0                       0                       0                
+  1   280   # pipe3.endL[2]
+ -1      10                  1.0000000000000000E-03 1.0000000000000000E+100
+  1   280   # pipe3.endD[1]
+ -1      10                  1.0000000000000000E-03 1.0000000000000000E+100
+  1   280   # pipe3.endD[2]
+ -1       1                       0                       0                
+  1   280   # pipe3.recEnd[1]
+ -1       1                       0                       0                
+  1   280   # pipe3.recEnd[2]
+ -1       0                       0                       0                
+  1   280   # pipe3.QlossFactor
+  0       0                       0                       0                
+  6  1280   # pipe3.Lsegm
+  0       0                       0                       0                
+  6  1280   # pipe3.volD[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.volD[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.volD[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.volL[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.volL[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.volL[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.DZ
+  0       0                       0                       0                
+  6  1280   # pipe3.vDL[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.vDL[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.vDL[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.vDL[4]
+  0       0                       0                       0                
+  6  1280   # pipe3.vDR[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.vDR[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.vDR[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.vDR[4]
+  0       0                       0                       0                
+  6  1280   # pipe3.mxD[1, 1]
+  0       0                       0                       0                
+  6  1280   # pipe3.mxD[1, 2]
+  0       0                       0                       0                
+  6  1280   # pipe3.mxD[2, 1]
+  0       0                       0                       0                
+  6  1280   # pipe3.mxD[2, 2]
+  0       0                       0                       0                
+  6  1280   # pipe3.mxD[3, 1]
+  0       0                       0                       0                
+  6  1280   # pipe3.mxD[3, 2]
+  0       0                       0                       0                
+  6  1280   # pipe3.mxD[4, 1]
+  0       0                       0                       0                
+  6  1280   # pipe3.mxD[4, 2]
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.v_pStart[1]
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.v_pStart[2]
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.v_pStart[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.recInM[1, 1]
+  0       0                       0                       0                
+  6  1280   # pipe3.recInM[1, 2]
+  0       0                       0                       0                
+  6  1280   # pipe3.recInM[2, 1]
+  0       0                       0                       0                
+  6  1280   # pipe3.recInM[2, 2]
+  0       0                       0                       0                
+  6  1280   # pipe3.recInM[3, 1]
+  0       0                       0                       0                
+  6  1280   # pipe3.recInM[3, 2]
+  0       0                       0                       0                
+  6  1280   # pipe3.recInM[4, 1]
+  0       0                       0                       0                
+  6  1280   # pipe3.recInM[4, 2]
+ -1       1                       0                       0                
+  1   281   # pipe3.horizontalIcon
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # pipe3.a.h_outflow
+  0       1                       0                       1                
+  6   260   # pipe3.a.X_outflow[1]
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # pipe3.b.h_outflow
+  0       1                       0                       1                
+  6   260   # pipe3.b.X_outflow[1]
+  0       4                       3                 1.0000000000000000E+100
+  6   258   # pipe3.n
+ -1   10000                       0                       0                
+  1   280   # pipe3.L
+ -1     100                       0                 1.0000000000000000E+100
+  1   280   # pipe3.ZL
+ -1      90                       0                 1.0000000000000000E+100
+  1   280   # pipe3.ZR
+  0       0                       0                       0                
+  6   256   # pipe3.Q_start
+ -1  100000                       0                       0                
+  1   280   # pipe3.p_start
+  0  2.8814999999999998E+02       0                 1.0000000000000000E+100
+  6   256   # pipe3.T_start
+  0       1                       0                       0                
+  6   257   # pipe3.steadyState
+  0       0                       0                       0                
+  6   256   # pipe3.pipeRoughness
+  0       1                       0                       0                
+  6   257   # pipe3.constantTemperature
+  0       0                       0                       0                
+  6   256   # pipe3.gasPU
+  0       0                       0                       0                
+  6   256   # pipe3.tubeElasticity
+ -1       1                       0                       0                
+  1   281   # pipe3.showDataInIcon
+  0       0                       0                       0                
+  6   257   # pipe3.enable_dataVizPort_upper
+  0       0                       0                       0                
+  6   257   # pipe3.enable_dataVizPort_lower
+  0       0                       0                       0                
+  6   256   # pipeValve3.summary.dp_pipe
+  0     300                       0                   10000                
+  6   256   # pipeValve3.summary.T_out
+  0       0                       0                       0                
+  6   256   # pipeValve3.summary.Q_in
+  0       0                       0                       0                
+  6   256   # pipeValve3.summary.Q_out
+  0       0                       0                       0                
+  6   256   # pipeValve3.summary.dp_valve
+  0       0                       0                       0                
+  6   256   # pipeValve3.summary.dp
+ -1       0                       0                      50                
+  1   280   # pipeValve3.endL[1]
+ -1  1.0000000000000000E-02  1.0000000000000000E-02      50                
+  1   280   # pipeValve3.endL[2]
+ -1      10                  1.0000000000000000E-03 1.0000000000000000E+100
+  1   280   # pipeValve3.endD[1]
+ -1      10                  1.0000000000000000E-03 1.0000000000000000E+100
+  1   280   # pipeValve3.endD[2]
+ -1  1.2350000000000000E+05       0                       0                
+  1   280   # pipeValve3.m_dot_nom
+ -1  9.0000000000000000E+05  1.0000000000000000E-02 1.0000000000000000E+100
+  1   280   # pipeValve3.dp_nom
+ -1    1000                  1.0000000000000000E-02 1.0000000000000000E+100
+  1   280   # pipeValve3.d_nom
+ -1       1                  1.0000000000000000E-02 1.0000000000000000E+100
+  1   280   # pipeValve3.open_nom
+ -1       1                       0                       0                
+  1   280   # pipeValve3.recFact[1]
+ -1       1                       0                       0                
+  1   280   # pipeValve3.recFact[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.FzStart
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pStartBottom
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.summary.dp_pipe
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.summary.Q_out
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.endL[1]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.endL[2]
+  0  1.0000000000000000E-03  1.0000000000000000E-03 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.endD[1]
+  0  1.0000000000000000E-03  1.0000000000000000E-03 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.endD[2]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.recEnd[1]
+  0       1                       0                       0                
+  6   256   # pipeValve3.pipe.recEnd[2]
+ -1       0                       0                       0                
+  1   280   # pipeValve3.pipe.QlossFactor
+  0      25                       0                       0                
+  6  1280   # pipeValve3.pipe.Lsegm
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volD[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volD[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volD[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volL[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volL[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volL[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.DZ
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.vDL[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.vDL[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.vDL[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.vDL[4]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.vDR[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.vDR[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.vDR[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.vDR[4]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.mxD[1, 1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.mxD[1, 2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.mxD[2, 1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.mxD[2, 2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.mxD[3, 1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.mxD[3, 2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.mxD[4, 1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.mxD[4, 2]
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.v_pStart[1]
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.v_pStart[2]
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.v_pStart[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.recInM[1, 1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.recInM[1, 2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.recInM[2, 1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.recInM[2, 2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.recInM[3, 1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.recInM[3, 2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.recInM[4, 1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.recInM[4, 2]
+ -1       0                       0                       0                
+  1   281   # pipeValve3.pipe.horizontalIcon
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.a.X_outflow[1]
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # pipeValve3.pipe.b.h_outflow
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.b.X_outflow[1]
+  0       4                       3                 1.0000000000000000E+100
+  6   258   # pipeValve3.pipe.n
+  0     100                       0                       0                
+  6   256   # pipeValve3.pipe.L
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.ZL
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.ZR
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.Q_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.p_start
+  0  2.8814999999999998E+02       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.T_start
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.steadyState
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.pipeRoughness
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.constantTemperature
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.gasPU
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeElasticity
+ -1       1                       0                       0                
+  1   281   # pipeValve3.pipe.showDataInIcon
+  0       0                       0                       0                
+  6   257   # pipeValve3.pipe.enable_dataVizPort_upper
+  0       0                       0                       0                
+  6   257   # pipeValve3.pipe.enable_dataVizPort_lower
+ -1       1                       1                       2                
+  1   282   # pipeValve3.closedVol.paraOption
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.D
+ -1       1                       0                       0                
+  1   280   # pipeValve3.closedVol.Ac
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.L
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.gasPU
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.dVdp
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.p_start
+  0  2.8814999999999998E+02       0                   10000                
+  6   256   # pipeValve3.closedVol.T_start
+  0       1                       0                       0                
+  6   257   # pipeValve3.closedVol.steadyState
+  0       1                       0                       0                
+  6   257   # pipeValve3.closedVol.constantTemperature
+ -1       1                       0                       0                
+  1   281   # pipeValve3.closedVol.include_Ekin
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.closedVol.d
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.closedVol.M
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.cv
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.betaBulk
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.alphaT
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.closedVol.v
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.closedVol.H
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.kappa
+  0       0                       0                       0                
+  6   288   # pipeValve3.closedVol.sum_m
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.sum_H_flow
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.sum_E
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.H_flow_portA
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.H_flow_portB
+  0       0                       0                       0                
+  6  1280   # pipeValve3.closedVol.A
+  0       0                       0                       0                
+  6  1280   # pipeValve3.closedVol.Vol
+  0       0                       0                       0                
+  6  1280   # pipeValve3.closedVol.der_p
+  0       0                       0                       0                
+  6  1280   # pipeValve3.closedVol.vIn
+ -1       0                       0                       0                
+  1  1304   # pipeValve3.closedVol.der_Vol
+  0       0                       0                  1.0000000000000000E+08
+  6   256   # pipeValve3.closedVol.state.p
+  0     300                       0                   10000                
+  6   256   # pipeValve3.closedVol.state.T
+  0       1                       0                       1                
+  6   256   # pipeValve3.closedVol.state.X[1]
+ -1       0                       0                       0                
+  2   272   # pipeValve3.closedVol.p
+  0       0                       0                       0                
+  3   256   # pipeValve3.closedVol.der(p)
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.closedVol.T
+  0       0                       0                       0                
+  6   256   # pipeValve3.closedVol.der(T)
+  0       1                       0                       1                
+  6   260   # pipeValve3.closedVol.a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.closedVol.b.X_outflow[1]
+  0       0                       0                       0                
+  6   256   # pipeValve3.valve.summary.dp_valve
+  0       0                       0                       0                
+  6   257   # pipeValve3.valve.noReturn
+  0       0                       0                       0                
+  6   256   # pipeValve3.valve.m_dot_nom
+  0  1.0000000000000000E-02  1.0000000000000000E-02 1.0000000000000000E+100
+  6   256   # pipeValve3.valve.dp_nom
+  0  1.0000000000000000E-02  1.0000000000000000E-02 1.0000000000000000E+100
+  6   256   # pipeValve3.valve.d_nom
+  0  1.0000000000000000E-02  1.0000000000000000E-02 1.0000000000000000E+100
+  6   256   # pipeValve3.valve.open_nom
+  0       0                       0                       0                
+  6   257   # pipeValve3.valve.steadyState
+  0       0                       0                       0                
+  6   256   # pipeValve3.valve.Q_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.valve.mdot_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.valve.dp_reg
+ -1  5.0000000000000000E-01       0                       0                
+  1   280   # pipeValve3.valve.T_filter
+  0       0                       0                       0                
+  6  1280   # pipeValve3.valve.AreaNom
+  0       0                       0                       0                
+  6  1280   # pipeValve3.valve.dp
+ -1       0                       0                       0                
+  2  1296   # pipeValve3.valve.mIn
+  0       0                       0                       0                
+  3  1280   # pipeValve3.valve.der(mIn)
+  0       0                       0                       0                
+  6  1280   # pipeValve3.valve.vInDp
+  0       0                       0                       0                
+  6  1280   # pipeValve3.valve.vOut
+  0       1                       0                       1                
+  6  1280   # pipeValve3.valve.state.X[1]
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.valve.d
+  0       0                       0                       0                
+  6   256   # pipeValve3.valve.recIn
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.valve.A
+  0       1                       0                       1                
+  6   260   # pipeValve3.valve.a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.valve.b.X_outflow[1]
+  0       1                       0                       0                
+  6   256   # pipeValve3.valve.recFactors[1]
+  0       0                       0                       0                
+  6   256   # pipeValve3.valve.recFactors[2]
+  0       0                       0                       0                
+  6   256   # pipeValve3.valve.areaRec[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.valve.recFactor1[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.valve.recFactor1[2]
+ -1       0                       0                       0                
+  1   281   # pipeValve3.horizontalIcon
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # pipeValve3.a.h_outflow
+  0       1                       0                       1                
+  6   260   # pipeValve3.a.X_outflow[1]
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # pipeValve3.b.h_outflow
+  0       1                       0                       1                
+  6   260   # pipeValve3.b.X_outflow[1]
+  0       4                       3                 1.0000000000000000E+100
+  6   258   # pipeValve3.n
+  0     100                       0                       0                
+  6   256   # pipeValve3.L
+ -1      90                       0                 1.0000000000000000E+100
+  1   280   # pipeValve3.ZL
+ -1       0                       0                 1.0000000000000000E+100
+  1   280   # pipeValve3.ZR
+  0       0                       0                       0                
+  6   256   # pipeValve3.Q_start
+ -1  100000                       0                       0                
+  1   280   # pipeValve3.p_start
+  0  2.8814999999999998E+02       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.T_start
+  0       1                       0                       0                
+  6   257   # pipeValve3.steadyState
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipeRoughness
+  0       1                       0                       0                
+  6   257   # pipeValve3.constantTemperature
+  0       0                       0                       0                
+  6   256   # pipeValve3.gasPU
+  0       0                       0                       0                
+  6   256   # pipeValve3.tubeElasticity
+ -1       1                       0                       0                
+  1   281   # pipeValve3.showDataInIcon
+  0       0                       0                       0                
+  6   257   # pipeValve3.enable_dataVizPort_upper
+  0       0                       0                       0                
+  6   257   # pipeValve3.enable_dataVizPort_lower
   0       0                       0                       0                
   6   257   # pipe.tubeSeg[1].No_Return
   0       0                       0                       0                
@@ -5886,6 +7614,1386 @@ double initialValue(1927,6)
   6   260   # pipeValve2.pipe.volSeg[3].a.X_outflow[1]
   0       1                       0                       1                
   6   260   # pipeValve2.pipe.volSeg[3].b.X_outflow[1]
+  0       0                       0                       0                
+  6   257   # pipe3.tubeSeg[1].No_Return
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].L
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.tubeSeg[1].D[1]
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.tubeSeg[1].D[2]
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].Dz
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].pipeRoughness
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].lossFactors[1]
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].lossFactors[2]
+ -1       0                       0                       0                
+  1   280   # pipe3.tubeSeg[1].lossInPipe
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].QlossFactor
+  0       1                       0                       0                
+  6   257   # pipe3.tubeSeg[1].steadyState
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].Q_start
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].mdot_start
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].V
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   272   # pipe3.tubeSeg[1].m_dot
+  0       0                       0                       0                
+  3   256   # pipe3.tubeSeg[1].der(m_dot)
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[1].c
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].phi
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].A[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].A[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].ratA
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].actA
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].avgD
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].recFactors[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].recFactors[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].recFactors[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].recFactors[4]
+  0       0                       0                       0                
+  6  1344   # pipe3.tubeSeg[1].kQ
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].sumF
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].Fmv
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].vIn
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].vOut
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[4]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[5]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[6]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[7]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[8]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[9]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].fricPara[10]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].rec[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].rec[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].Ffric
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].Fdp
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].Fz
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.tubeSeg[1].d
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.tubeSeg[1].v
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].cv
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].Re
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[1].Re2
+  0  100000                       0                  1.0000000000000000E+08
+  6  1280   # pipe3.tubeSeg[1].state.p
+  0     300                       0                   10000                
+  6  1280   # pipe3.tubeSeg[1].state.T
+  0       1                       0                       1                
+  6  1280   # pipe3.tubeSeg[1].state.X[1]
+  0       1                       0                       1                
+  6   260   # pipe3.tubeSeg[1].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipe3.tubeSeg[1].b.X_outflow[1]
+  0       0                       0                       0                
+  6   257   # pipe3.tubeSeg[2].No_Return
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].L
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.tubeSeg[2].D[1]
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.tubeSeg[2].D[2]
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].Dz
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].pipeRoughness
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].lossFactors[1]
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].lossFactors[2]
+ -1       0                       0                       0                
+  1   280   # pipe3.tubeSeg[2].lossInPipe
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].QlossFactor
+  0       1                       0                       0                
+  6   257   # pipe3.tubeSeg[2].steadyState
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].Q_start
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].mdot_start
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].V
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   272   # pipe3.tubeSeg[2].m_dot
+  0       0                       0                       0                
+  3   256   # pipe3.tubeSeg[2].der(m_dot)
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].Q
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[2].c
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].phi
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].A[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].A[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].ratA
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].actA
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].avgD
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].recFactors[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].recFactors[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].recFactors[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].recFactors[4]
+  0       0                       0                       0                
+  6  1344   # pipe3.tubeSeg[2].kQ
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].sumF
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].Fmv
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].vIn
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].vOut
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[4]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[5]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[6]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[7]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[8]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[9]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].fricPara[10]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].rec[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].rec[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].Ffric
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].Fdp
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].Fz
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.tubeSeg[2].d
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.tubeSeg[2].v
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].cv
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].Re
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[2].Re2
+  0       0                       0                  1.0000000000000000E+08
+  6  1280   # pipe3.tubeSeg[2].state.p
+  0     300                       0                   10000                
+  6  1280   # pipe3.tubeSeg[2].state.T
+  0       1                       0                       1                
+  6  1280   # pipe3.tubeSeg[2].state.X[1]
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # pipe3.tubeSeg[2].a.h_outflow
+  0       1                       0                       1                
+  6   260   # pipe3.tubeSeg[2].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipe3.tubeSeg[2].b.X_outflow[1]
+  0       0                       0                       0                
+  6   257   # pipe3.tubeSeg[3].No_Return
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].L
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.tubeSeg[3].D[1]
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.tubeSeg[3].D[2]
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].Dz
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].pipeRoughness
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].lossFactors[1]
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].lossFactors[2]
+ -1       0                       0                       0                
+  1   280   # pipe3.tubeSeg[3].lossInPipe
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].QlossFactor
+  0       1                       0                       0                
+  6   257   # pipe3.tubeSeg[3].steadyState
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].Q_start
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].mdot_start
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].V
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   272   # pipe3.tubeSeg[3].m_dot
+  0       0                       0                       0                
+  3   256   # pipe3.tubeSeg[3].der(m_dot)
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].Q
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[3].c
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].phi
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].A[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].A[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].ratA
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].actA
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].avgD
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].recFactors[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].recFactors[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].recFactors[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].recFactors[4]
+  0       0                       0                       0                
+  6  1344   # pipe3.tubeSeg[3].kQ
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].sumF
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].Fmv
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].vIn
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].vOut
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[4]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[5]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[6]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[7]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[8]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[9]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].fricPara[10]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].rec[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].rec[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].Ffric
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].Fdp
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].Fz
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.tubeSeg[3].d
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.tubeSeg[3].v
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].cv
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].Re
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[3].Re2
+  0       0                       0                  1.0000000000000000E+08
+  6  1280   # pipe3.tubeSeg[3].state.p
+  0     300                       0                   10000                
+  6  1280   # pipe3.tubeSeg[3].state.T
+  0       1                       0                       1                
+  6  1280   # pipe3.tubeSeg[3].state.X[1]
+  0       1                       0                       1                
+  6   260   # pipe3.tubeSeg[3].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipe3.tubeSeg[3].b.X_outflow[1]
+  0       0                       0                       0                
+  6   257   # pipe3.tubeSeg[4].No_Return
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].L
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.tubeSeg[4].D[1]
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.tubeSeg[4].D[2]
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].Dz
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].pipeRoughness
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].lossFactors[1]
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].lossFactors[2]
+ -1       0                       0                       0                
+  1   280   # pipe3.tubeSeg[4].lossInPipe
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].QlossFactor
+  0       1                       0                       0                
+  6   257   # pipe3.tubeSeg[4].steadyState
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].Q_start
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].mdot_start
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].V
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   272   # pipe3.tubeSeg[4].m_dot
+  0       0                       0                       0                
+  3   256   # pipe3.tubeSeg[4].der(m_dot)
+  0       0                       0                       0                
+  6   256   # pipe3.tubeSeg[4].c
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].phi
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].A[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].A[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].ratA
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].actA
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].avgD
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].recFactors[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].recFactors[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].recFactors[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].recFactors[4]
+  0       0                       0                       0                
+  6  1344   # pipe3.tubeSeg[4].kQ
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].sumF
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].Fmv
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].vIn
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].vOut
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[3]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[4]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[5]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[6]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[7]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[8]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[9]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].fricPara[10]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].rec[1]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].rec[2]
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].Ffric
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].Fdp
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].Fz
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.tubeSeg[4].d
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipe3.tubeSeg[4].v
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].cv
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].Re
+  0       0                       0                       0                
+  6  1280   # pipe3.tubeSeg[4].Re2
+  0       0                       0                  1.0000000000000000E+08
+  6  1280   # pipe3.tubeSeg[4].state.p
+  0     300                       0                   10000                
+  6  1280   # pipe3.tubeSeg[4].state.T
+  0       1                       0                       1                
+  6  1280   # pipe3.tubeSeg[4].state.X[1]
+  0       1                       0                       1                
+  6   260   # pipe3.tubeSeg[4].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipe3.tubeSeg[4].b.X_outflow[1]
+ -1       1                       1                       2                
+  1   282   # pipe3.volSeg[1].paraOption
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].D
+ -1       1                       0                       0                
+  1   280   # pipe3.volSeg[1].Ac
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].L
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].gasPU
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].dVdp
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].p_start
+  0  2.8814999999999998E+02       0                   10000                
+  6   256   # pipe3.volSeg[1].T_start
+  0       1                       0                       0                
+  6   257   # pipe3.volSeg[1].steadyState
+  0       1                       0                       0                
+  6   257   # pipe3.volSeg[1].constantTemperature
+ -1       1                       0                       0                
+  1   281   # pipe3.volSeg[1].include_Ekin
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[1].d
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[1].M
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].cv
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].betaBulk
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].alphaT
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[1].v
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[1].H
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].kappa
+  0       0                       0                       0                
+  6   288   # pipe3.volSeg[1].sum_m
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].sum_H_flow
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].sum_E
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].H_flow_portA
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].H_flow_portB
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[1].A
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[1].Vol
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[1].der_p
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[1].vIn
+ -1       0                       0                       0                
+  1  1304   # pipe3.volSeg[1].der_Vol
+  0  100000                       0                  1.0000000000000000E+08
+  6   256   # pipe3.volSeg[1].state.p
+  0     300                       0                   10000                
+  6   256   # pipe3.volSeg[1].state.T
+  0       1                       0                       1                
+  6   256   # pipe3.volSeg[1].state.X[1]
+ -1       0                       0                       0                
+  2   272   # pipe3.volSeg[1].p
+  0       0                       0                       0                
+  3   256   # pipe3.volSeg[1].der(p)
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[1].T
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[1].der(T)
+  0       1                       0                       1                
+  6   260   # pipe3.volSeg[1].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipe3.volSeg[1].b.X_outflow[1]
+ -1       1                       1                       2                
+  1   282   # pipe3.volSeg[2].paraOption
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].D
+ -1       1                       0                       0                
+  1   280   # pipe3.volSeg[2].Ac
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].L
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].gasPU
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].dVdp
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].p_start
+  0  2.8814999999999998E+02       0                   10000                
+  6   256   # pipe3.volSeg[2].T_start
+  0       1                       0                       0                
+  6   257   # pipe3.volSeg[2].steadyState
+  0       1                       0                       0                
+  6   257   # pipe3.volSeg[2].constantTemperature
+ -1       1                       0                       0                
+  1   281   # pipe3.volSeg[2].include_Ekin
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[2].d
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[2].M
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].cv
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].betaBulk
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].alphaT
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[2].v
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[2].H
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].kappa
+  0       0                       0                       0                
+  6   288   # pipe3.volSeg[2].sum_m
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].sum_H_flow
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].sum_E
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].H_flow_portA
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].H_flow_portB
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[2].A
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[2].Vol
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[2].der_p
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[2].vIn
+ -1       0                       0                       0                
+  1  1304   # pipe3.volSeg[2].der_Vol
+  0  100000                       0                  1.0000000000000000E+08
+  6   256   # pipe3.volSeg[2].state.p
+  0     300                       0                   10000                
+  6   256   # pipe3.volSeg[2].state.T
+  0       1                       0                       1                
+  6   256   # pipe3.volSeg[2].state.X[1]
+ -1       0                       0                       0                
+  2   272   # pipe3.volSeg[2].p
+  0       0                       0                       0                
+  3   256   # pipe3.volSeg[2].der(p)
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[2].T
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[2].der(T)
+  0       1                       0                       1                
+  6   260   # pipe3.volSeg[2].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipe3.volSeg[2].b.X_outflow[1]
+ -1       1                       1                       2                
+  1   282   # pipe3.volSeg[3].paraOption
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].D
+ -1       1                       0                       0                
+  1   280   # pipe3.volSeg[3].Ac
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].L
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].gasPU
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].dVdp
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].p_start
+  0  2.8814999999999998E+02       0                   10000                
+  6   256   # pipe3.volSeg[3].T_start
+  0       1                       0                       0                
+  6   257   # pipe3.volSeg[3].steadyState
+  0       1                       0                       0                
+  6   257   # pipe3.volSeg[3].constantTemperature
+ -1       1                       0                       0                
+  1   281   # pipe3.volSeg[3].include_Ekin
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[3].d
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[3].M
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].cv
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].betaBulk
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].alphaT
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[3].v
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[3].H
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].kappa
+  0       0                       0                       0                
+  6   288   # pipe3.volSeg[3].sum_m
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].sum_H_flow
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].sum_E
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].H_flow_portA
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].H_flow_portB
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[3].A
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[3].Vol
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[3].der_p
+  0       0                       0                       0                
+  6  1280   # pipe3.volSeg[3].vIn
+ -1       0                       0                       0                
+  1  1304   # pipe3.volSeg[3].der_Vol
+  0  100000                       0                  1.0000000000000000E+08
+  6   256   # pipe3.volSeg[3].state.p
+  0     300                       0                   10000                
+  6   256   # pipe3.volSeg[3].state.T
+  0       1                       0                       1                
+  6   256   # pipe3.volSeg[3].state.X[1]
+ -1       0                       0                       0                
+  2   272   # pipe3.volSeg[3].p
+  0       0                       0                       0                
+  3   256   # pipe3.volSeg[3].der(p)
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipe3.volSeg[3].T
+  0       0                       0                       0                
+  6   256   # pipe3.volSeg[3].der(T)
+  0       1                       0                       1                
+  6   260   # pipe3.volSeg[3].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipe3.volSeg[3].b.X_outflow[1]
+  0       0                       0                       0                
+  6   257   # pipeValve3.pipe.tubeSeg[1].No_Return
+  0      25                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].L
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.tubeSeg[1].D[1]
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.tubeSeg[1].D[2]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].Dz
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].pipeRoughness
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].lossFactors[1]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].lossFactors[2]
+ -1       0                       0                       0                
+  1   280   # pipeValve3.pipe.tubeSeg[1].lossInPipe
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].QlossFactor
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.tubeSeg[1].steadyState
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].Q_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].mdot_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].V
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   272   # pipeValve3.pipe.tubeSeg[1].m_dot
+  0       0                       0                       0                
+  3   256   # pipeValve3.pipe.tubeSeg[1].der(m_dot)
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[1].c
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].phi
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].A[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].A[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].ratA
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].actA
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].avgD
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].recFactors[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].recFactors[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].recFactors[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].recFactors[4]
+  0       0                       0                       0                
+  6  1344   # pipeValve3.pipe.tubeSeg[1].kQ
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].sumF
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].Fmv
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].vIn
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].vOut
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[4]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[5]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[6]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[7]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[8]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[9]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].fricPara[10]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].rec[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].rec[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].Ffric
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].Fdp
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].Fz
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.tubeSeg[1].d
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.tubeSeg[1].v
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].cv
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].Re
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].Re2
+  0  100000                       0                  1.0000000000000000E+08
+  6  1280   # pipeValve3.pipe.tubeSeg[1].state.p
+  0     300                       0                   10000                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].state.T
+  0       1                       0                       1                
+  6  1280   # pipeValve3.pipe.tubeSeg[1].state.X[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.tubeSeg[1].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.tubeSeg[1].b.X_outflow[1]
+  0       0                       0                       0                
+  6   257   # pipeValve3.pipe.tubeSeg[2].No_Return
+  0      25                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].L
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.tubeSeg[2].D[1]
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.tubeSeg[2].D[2]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].Dz
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].pipeRoughness
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].lossFactors[1]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].lossFactors[2]
+ -1       0                       0                       0                
+  1   280   # pipeValve3.pipe.tubeSeg[2].lossInPipe
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].QlossFactor
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.tubeSeg[2].steadyState
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].Q_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].mdot_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].V
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   272   # pipeValve3.pipe.tubeSeg[2].m_dot
+  0       0                       0                       0                
+  3   256   # pipeValve3.pipe.tubeSeg[2].der(m_dot)
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].Q
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[2].c
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].phi
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].A[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].A[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].ratA
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].actA
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].avgD
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].recFactors[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].recFactors[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].recFactors[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].recFactors[4]
+  0       0                       0                       0                
+  6  1344   # pipeValve3.pipe.tubeSeg[2].kQ
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].sumF
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].Fmv
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].vIn
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].vOut
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[4]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[5]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[6]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[7]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[8]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[9]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].fricPara[10]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].rec[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].rec[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].Ffric
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].Fdp
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].Fz
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.tubeSeg[2].d
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.tubeSeg[2].v
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].cv
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].Re
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].Re2
+  0       0                       0                  1.0000000000000000E+08
+  6  1280   # pipeValve3.pipe.tubeSeg[2].state.p
+  0     300                       0                   10000                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].state.T
+  0       1                       0                       1                
+  6  1280   # pipeValve3.pipe.tubeSeg[2].state.X[1]
+  0       0                 -1.0000000000000000E+10  1.0000000000000000E+10
+  6   260   # pipeValve3.pipe.tubeSeg[2].a.h_outflow
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.tubeSeg[2].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.tubeSeg[2].b.X_outflow[1]
+  0       0                       0                       0                
+  6   257   # pipeValve3.pipe.tubeSeg[3].No_Return
+  0      25                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].L
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.tubeSeg[3].D[1]
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.tubeSeg[3].D[2]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].Dz
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].pipeRoughness
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].lossFactors[1]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].lossFactors[2]
+ -1       0                       0                       0                
+  1   280   # pipeValve3.pipe.tubeSeg[3].lossInPipe
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].QlossFactor
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.tubeSeg[3].steadyState
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].Q_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].mdot_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].V
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   272   # pipeValve3.pipe.tubeSeg[3].m_dot
+  0       0                       0                       0                
+  3   256   # pipeValve3.pipe.tubeSeg[3].der(m_dot)
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].Q
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[3].c
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].phi
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].A[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].A[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].ratA
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].actA
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].avgD
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].recFactors[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].recFactors[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].recFactors[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].recFactors[4]
+  0       0                       0                       0                
+  6  1344   # pipeValve3.pipe.tubeSeg[3].kQ
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].sumF
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].Fmv
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].vIn
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].vOut
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[4]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[5]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[6]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[7]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[8]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[9]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].fricPara[10]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].rec[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].rec[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].Ffric
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].Fdp
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].Fz
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.tubeSeg[3].d
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.tubeSeg[3].v
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].cv
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].Re
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].Re2
+  0       0                       0                  1.0000000000000000E+08
+  6  1280   # pipeValve3.pipe.tubeSeg[3].state.p
+  0     300                       0                   10000                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].state.T
+  0       1                       0                       1                
+  6  1280   # pipeValve3.pipe.tubeSeg[3].state.X[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.tubeSeg[3].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.tubeSeg[3].b.X_outflow[1]
+  0       0                       0                       0                
+  6   257   # pipeValve3.pipe.tubeSeg[4].No_Return
+  0      25                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].L
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.tubeSeg[4].D[1]
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.tubeSeg[4].D[2]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].Dz
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].pipeRoughness
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].lossFactors[1]
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].lossFactors[2]
+ -1       0                       0                       0                
+  1   280   # pipeValve3.pipe.tubeSeg[4].lossInPipe
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].QlossFactor
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.tubeSeg[4].steadyState
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].Q_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].mdot_start
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].V
+ -1       0                 -1.0000000000000000E+08  1.0000000000000000E+08
+  2   272   # pipeValve3.pipe.tubeSeg[4].m_dot
+  0       0                       0                       0                
+  3   256   # pipeValve3.pipe.tubeSeg[4].der(m_dot)
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.tubeSeg[4].c
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].phi
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].A[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].A[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].ratA
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].actA
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].avgD
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].recFactors[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].recFactors[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].recFactors[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].recFactors[4]
+  0       0                       0                       0                
+  6  1344   # pipeValve3.pipe.tubeSeg[4].kQ
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].sumF
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].Fmv
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].vIn
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].vOut
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[3]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[4]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[5]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[6]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[7]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[8]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[9]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].fricPara[10]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].rec[1]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].rec[2]
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].Ffric
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].Fdp
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].Fz
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.tubeSeg[4].d
+  0       0                       0                 1.0000000000000000E+100
+  6  1280   # pipeValve3.pipe.tubeSeg[4].v
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].cv
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].Re
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].Re2
+  0       0                       0                  1.0000000000000000E+08
+  6  1280   # pipeValve3.pipe.tubeSeg[4].state.p
+  0     300                       0                   10000                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].state.T
+  0       1                       0                       1                
+  6  1280   # pipeValve3.pipe.tubeSeg[4].state.X[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.tubeSeg[4].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.tubeSeg[4].b.X_outflow[1]
+ -1       1                       1                       2                
+  1   282   # pipeValve3.pipe.volSeg[1].paraOption
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].D
+ -1       1                       0                       0                
+  1   280   # pipeValve3.pipe.volSeg[1].Ac
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].L
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].gasPU
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].dVdp
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].p_start
+  0  2.8814999999999998E+02       0                   10000                
+  6   256   # pipeValve3.pipe.volSeg[1].T_start
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.volSeg[1].steadyState
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.volSeg[1].constantTemperature
+ -1       1                       0                       0                
+  1   281   # pipeValve3.pipe.volSeg[1].include_Ekin
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[1].d
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[1].M
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].cv
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].betaBulk
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].alphaT
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[1].v
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[1].H
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].kappa
+  0       0                       0                       0                
+  6   288   # pipeValve3.pipe.volSeg[1].sum_m
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].sum_H_flow
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].sum_E
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].H_flow_portA
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].H_flow_portB
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[1].A
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[1].Vol
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[1].der_p
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[1].vIn
+ -1       0                       0                       0                
+  1  1304   # pipeValve3.pipe.volSeg[1].der_Vol
+  0  100000                       0                  1.0000000000000000E+08
+  6   256   # pipeValve3.pipe.volSeg[1].state.p
+  0     300                       0                   10000                
+  6   256   # pipeValve3.pipe.volSeg[1].state.T
+  0       1                       0                       1                
+  6   256   # pipeValve3.pipe.volSeg[1].state.X[1]
+ -1       0                       0                       0                
+  2   272   # pipeValve3.pipe.volSeg[1].p
+  0       0                       0                       0                
+  3   256   # pipeValve3.pipe.volSeg[1].der(p)
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[1].T
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[1].der(T)
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.volSeg[1].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.volSeg[1].b.X_outflow[1]
+ -1       1                       1                       2                
+  1   282   # pipeValve3.pipe.volSeg[2].paraOption
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].D
+ -1       1                       0                       0                
+  1   280   # pipeValve3.pipe.volSeg[2].Ac
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].L
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].gasPU
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].dVdp
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].p_start
+  0  2.8814999999999998E+02       0                   10000                
+  6   256   # pipeValve3.pipe.volSeg[2].T_start
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.volSeg[2].steadyState
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.volSeg[2].constantTemperature
+ -1       1                       0                       0                
+  1   281   # pipeValve3.pipe.volSeg[2].include_Ekin
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[2].d
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[2].M
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].cv
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].betaBulk
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].alphaT
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[2].v
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[2].H
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].kappa
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].sum_m
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].sum_H_flow
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].sum_E
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].H_flow_portA
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].H_flow_portB
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[2].A
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[2].Vol
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[2].der_p
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[2].vIn
+ -1       0                       0                       0                
+  1  1304   # pipeValve3.pipe.volSeg[2].der_Vol
+  0  100000                       0                  1.0000000000000000E+08
+  6   256   # pipeValve3.pipe.volSeg[2].state.p
+  0     300                       0                   10000                
+  6   256   # pipeValve3.pipe.volSeg[2].state.T
+  0       1                       0                       1                
+  6   256   # pipeValve3.pipe.volSeg[2].state.X[1]
+ -1       0                       0                       0                
+  2   272   # pipeValve3.pipe.volSeg[2].p
+  0       0                       0                       0                
+  3   256   # pipeValve3.pipe.volSeg[2].der(p)
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[2].T
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[2].der(T)
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.volSeg[2].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.volSeg[2].b.X_outflow[1]
+ -1       1                       1                       2                
+  1   282   # pipeValve3.pipe.volSeg[3].paraOption
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].D
+ -1       1                       0                       0                
+  1   280   # pipeValve3.pipe.volSeg[3].Ac
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].L
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].gasPU
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].dVdp
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].p_start
+  0  2.8814999999999998E+02       0                   10000                
+  6   256   # pipeValve3.pipe.volSeg[3].T_start
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.volSeg[3].steadyState
+  0       1                       0                       0                
+  6   257   # pipeValve3.pipe.volSeg[3].constantTemperature
+ -1       1                       0                       0                
+  1   281   # pipeValve3.pipe.volSeg[3].include_Ekin
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[3].d
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[3].M
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].cv
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].betaBulk
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].alphaT
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[3].v
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[3].H
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].kappa
+  0       0                       0                       0                
+  6   288   # pipeValve3.pipe.volSeg[3].sum_m
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].sum_H_flow
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].sum_E
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].H_flow_portA
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].H_flow_portB
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[3].A
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[3].Vol
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[3].der_p
+  0       0                       0                       0                
+  6  1280   # pipeValve3.pipe.volSeg[3].vIn
+ -1       0                       0                       0                
+  1  1304   # pipeValve3.pipe.volSeg[3].der_Vol
+  0  100000                       0                  1.0000000000000000E+08
+  6   256   # pipeValve3.pipe.volSeg[3].state.p
+  0     300                       0                   10000                
+  6   256   # pipeValve3.pipe.volSeg[3].state.T
+  0       1                       0                       1                
+  6   256   # pipeValve3.pipe.volSeg[3].state.X[1]
+ -1       0                       0                       0                
+  2   272   # pipeValve3.pipe.volSeg[3].p
+  0       0                       0                       0                
+  3   256   # pipeValve3.pipe.volSeg[3].der(p)
+  0       0                       0                 1.0000000000000000E+100
+  6   256   # pipeValve3.pipe.volSeg[3].T
+  0       0                       0                       0                
+  6   256   # pipeValve3.pipe.volSeg[3].der(T)
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.volSeg[3].a.X_outflow[1]
+  0       1                       0                       1                
+  6   260   # pipeValve3.pipe.volSeg[3].b.X_outflow[1]
 
 
 # Matrix with 6 columns defining the initial value calculation
@@ -5936,7 +9044,7 @@ double initialValue(1927,6)
 #   nominal value (and maybe minimum and maximum values given in 
 #   column 3 and 4). If these values are zero, scale(i)=1 is used).
 #
-char initialDescription(1927,123)
+char initialDescription(2963,123)
 Air content in the water [1]
 Average elasticity of the pipe as dVol/dp [m3/bar] [m4.kg-1.s2]
 Average relative roughness of the pipe [1]
@@ -6463,6 +9571,1042 @@ If true, include kinetic energy in energy balance [:#(type=Boolean)]
 [m-3.kg.K-1]
 [Pa.s]
 [J/kg]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Length of water column (over common reference) [m]
+Height of water column (over common reference) [m]
+Volume flow in shaft [m3/s]
+Diameter of the surge shaft [m]
+Elevation of the top of the shaft over the shaft bottom [m]
+Ratio of shaft height (deltZ) to length (if vertical = 1). Length of the shaft = deltZ/H2L [1]
+Volume of the shaft bottom volume [m3]
+Start-pressure at the bottom of the surge shaft [Pa|bar]
+Start-temperature of the water [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+Content of the free gas in the bottom volume [pu] [1]
+Shows parameter data in icon [:#(type=Boolean)]
+[m]
+[m2]
+[m]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass flow rate into the component [kg/s]
+Mass fractions of exiting fluid [kg/kg]
+parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+diameter of tunnel [m]
+cross section area of volume [m2]
+elevation of the bottom of the tunnel over the reference level [m]
+ratio of the shaft raise (deltZ) to shaft length [1]
+average relative roughness of the tunnel walls [1]
+local losses in the pipe recalculated to the added tunnel length [40*D*locLoss] [1]
+recovery factors of the flow momentum flux entering/leaving the tunnel at the bottom [1]
+recovery factors of the flow momentum flux entering/leaving the tunnel at the bottom [1]
+start level of the media over the bottom of the surge shaft [m]
+if true, model initializes in steady state [:#(type=Boolean)]
+true if surge tank is flooded [:#(type=Boolean)]
+[m]
+[1]
+Effective length [m]
+Shaft cross section area [m2]
+total length of the shaft (used in assertion below) [m]
+[N]
+[N]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+positive mass flow when flow entering the shaft [kg/s]
+der(positive mass flow when flow entering the shaft) [kg/s2]
+[m]
+[m/s]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Average relative roughness of the pipe [1]
+Reynolds number [1]
+Non-standard friction coefficient, lambda2= lambda*Re^2)
+[m2]
+
+
+lambda2(Re_turb)
+der(lambda2(Re_turb))/der(Re)
+
+
+
+
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+If true, Temperature is constant  [:#(type=Boolean)]
+Parameterization option [:#(type=Boolean)]
+Constant pressure in case pT signal not connected [Pa|bar]
+Constant temperature in case pT signal not connected [K|degC]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=Boolean)]
+Constant pressure in case pT signal not connected [Pa|bar]
+Constant temperature in case pT signal not connected [K|degC]
+Mass flow rate into the component [kg/s]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Pressure loss between last and first volume in pipe [Pa|bar]
+Volume flow at inlet [m3/s]
+Volume flow at outlet [m3/s]
+Dead lengths at both ends of the pipe, i.e., parts of the pipe not included in  the elasticity [m]
+Dead lengths at both ends of the pipe, i.e., parts of the pipe not included in  the elasticity [m]
+Diameter of the left and right end of the pipe [m]
+Diameter of the left and right end of the pipe [m]
+Recovery factors of the pipe inlet, outlet momentum
+Recovery factors of the pipe inlet, outlet momentum
+Constant CoefficientOfHeatTransfer for estimation of heat dissipation through the walls [W/(m2.K)]
+[m]
+Calculates average diameters of pipe volumes [m]
+Calculates average diameters of pipe volumes [m]
+Calculates average diameters of pipe volumes [m]
+Calculates lengths of pipe volumes [m]
+Calculates lengths of pipe volumes [m]
+Calculates lengths of pipe volumes [m]
+[m]
+Vector of inlet (left) diameters of the pipe segments [m]
+Vector of inlet (left) diameters of the pipe segments [m]
+Vector of inlet (left) diameters of the pipe segments [m]
+Vector of inlet (left) diameters of the pipe segments [m]
+Vector of outlet (right) diameters of the pipe segments [m]
+Vector of outlet (right) diameters of the pipe segments [m]
+Vector of outlet (right) diameters of the pipe segments [m]
+Vector of outlet (right) diameters of the pipe segments [m]
+[m]
+[m]
+[m]
+[m]
+[m]
+[m]
+[m]
+[m]
+[bar]
+[bar]
+[bar]
+
+
+
+
+
+
+
+
+If true, penstock icon is horizontal, else it has a 45 deg slope [:#(type=Boolean)]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Number of pipe segments [:#(type=Integer)]
+Total length of the pipe [m]
+Elevation of the left end of the pipe over the reference level (defines input pressure if connected to the open volume) [m]
+Elevation of the right end of the pipe over the reference level [m]
+Initial volume flow rate [m3/s]
+Initial pressure at inlet [Pa|bar]
+Initial temperature at inlet [K|degC]
+If true, steady state initialization [:#(type=Boolean)]
+Average relative roughness of the pipe [1]
+If true, Temperature is constant  [:#(type=Boolean)]
+Air content in the water [1]
+Average elasticity of the pipe as dVol/dp [m3/bar] [m4.kg-1.s2]
+Shows parameter data in icon [:#(type=Boolean)]
+Enable data visualizer port on the upper side [:#(type=Boolean)]
+Enable data visualizer port on the bottom side [:#(type=Boolean)]
+Pressure loss between last and first volume in pipe [Pa|bar]
+Outlet temperature [K|degC]
+Volume flow at inlet [m3/s]
+Volume flow at outlet [m3/s]
+Pressure drop over valve [Pa|bar]
+Pressure loss over both pipe and valve [Pa|bar]
+Dead lengths at both ends of the pipe, i.e., parts of the pipe not included in the elasticity (min={0,0.01}) [m]
+Dead lengths at both ends of the pipe, i.e., parts of the pipe not included in the elasticity (min={0,0.01}) [m]
+Diameter of the left and right end of the pipe [m]
+Diameter of the left and right end of the pipe [m]
+Nominal mass flow of the valve [kg/s]
+Pressure drop at the nominal point [Pa|bar]
+Nominal density [kg/m3|g/cm3]
+Nominal valve opening [1]
+Recovery factors at the inlet to the pipe, and outlet of the valve
+Recovery factors at the inlet to the pipe, and outlet of the valve
+[N]
+[Pa|bar]
+Pressure loss between last and first volume in pipe [Pa|bar]
+Volume flow at outlet [m3/s]
+Dead lengths at both ends of the pipe, i.e., parts of the pipe not included in  the elasticity [m]
+Dead lengths at both ends of the pipe, i.e., parts of the pipe not included in  the elasticity [m]
+Diameter of the left and right end of the pipe [m]
+Diameter of the left and right end of the pipe [m]
+Recovery factors of the pipe inlet, outlet momentum
+Recovery factors of the pipe inlet, outlet momentum
+Constant CoefficientOfHeatTransfer for estimation of heat dissipation through the walls [W/(m2.K)]
+[m]
+Calculates average diameters of pipe volumes [m]
+Calculates average diameters of pipe volumes [m]
+Calculates average diameters of pipe volumes [m]
+Calculates lengths of pipe volumes [m]
+Calculates lengths of pipe volumes [m]
+Calculates lengths of pipe volumes [m]
+[m]
+Vector of inlet (left) diameters of the pipe segments [m]
+Vector of inlet (left) diameters of the pipe segments [m]
+Vector of inlet (left) diameters of the pipe segments [m]
+Vector of inlet (left) diameters of the pipe segments [m]
+Vector of outlet (right) diameters of the pipe segments [m]
+Vector of outlet (right) diameters of the pipe segments [m]
+Vector of outlet (right) diameters of the pipe segments [m]
+Vector of outlet (right) diameters of the pipe segments [m]
+[m]
+[m]
+[m]
+[m]
+[m]
+[m]
+[m]
+[m]
+[bar]
+[bar]
+[bar]
+
+
+
+
+
+
+
+
+If true, penstock icon is horizontal, else it has a 45 deg slope [:#(type=Boolean)]
+Mass fractions of exiting fluid [kg/kg]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Number of pipe segments [:#(type=Integer)]
+Total length of the pipe [m]
+Elevation of the left end of the pipe over the reference level (defines input pressure if connected to the open volume) [m]
+Elevation of the right end of the pipe over the reference level [m]
+Initial volume flow rate [m3/s]
+Initial pressure at inlet [Pa|bar]
+Initial temperature at inlet [K|degC]
+If true, steady state initialization [:#(type=Boolean)]
+Average relative roughness of the pipe [1]
+If true, Temperature is constant  [:#(type=Boolean)]
+Air content in the water [1]
+Average elasticity of the pipe as dVol/dp [m3/bar] [m4.kg-1.s2]
+Shows parameter data in icon [:#(type=Boolean)]
+Enable data visualizer port on the upper side [:#(type=Boolean)]
+Enable data visualizer port on the bottom side [:#(type=Boolean)]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Pressure loss between last and first volume in pipe [Pa|bar]
+If true flow will be allowed from left to right only [:#(type=Boolean)]
+Nominal mass flow of the valve [kg/s]
+Nominal pressure drop at m_dot_nom, d_nom and open_nom [Pa|bar]
+Nominal density [kg/m3|g/cm3]
+Valve opening at m_dot_nom [1]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Small dp for regularization around zero mass flow [Pa|bar]
+Filter constant for vIn calculation [s]
+Used in expanding classes [m2]
+[Pa|bar]
+Estimation of the incoming media flow [kg/s]
+der(Estimation of the incoming media flow) [kg/s2]
+[Pa.m-1.s]
+[m/s]
+mass fractions [kg/kg]
+[kg/m3|g/cm3]
+
+(variable) area of the valve [m^2] [m2]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+recovery factors of the momentum at the inlet and outlet [1]
+recovery factors of the momentum at the inlet and outlet [1]
+area of pipes connected to the inlet [1] and outlet [2] of the valve [m2]
+[1]
+[1]
+If true, penstock icon is horizontal, else it has a 45 deg slope [:#(type=Boolean)]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Number of pipe segments [:#(type=Integer)]
+Total length of the pipe [m]
+Elevation of the left end of the pipe over the reference level (defines input pressure if connected to the open volume) [m]
+Elevation of the right end of the pipe over the reference level [m]
+Initial volume flow rate [m3/s]
+Initial pressure at inlet [Pa|bar]
+Initial temperature at inlet [K|degC]
+If true, steady state initialization [:#(type=Boolean)]
+Average relative roughness of the pipe [1]
+If true, Temperature is constant  [:#(type=Boolean)]
+Air content in the water [1]
+Average elasticity of the pipe as dVol/dp [m3/bar] [m4.kg-1.s2]
+Shows parameter data in icon [:#(type=Boolean)]
+Enable data visualizer port on the upper side [:#(type=Boolean)]
+Enable data visualizer port on the bottom side [:#(type=Boolean)]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+[m3/s]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+[m3/s]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+[m3/s]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Specific enthalpy of exiting fluid  [J/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+[m3/s]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Set to true in case of no-return valve on the pipe [:#(type=Boolean)]
+Length [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Diameters of the left and right side of the pipe (if not cicular calculate D=4*Area/Circumference) [m]
+Head of the pipe, i.e. difference between left and right port elevation [m]
+Average relative roughness of the pipe [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Vector of factors for calculation of losses in the pipe (see details in description above) [1]
+Local flow obstacles in the pipe. Value = 1, corresponds to 40 x D added length of the pipe [1]
+Heat transfer coefficient for estimation of heat dissipation through the walls [W/(m2.K)]
+If true, model initializes in steady state [:#(type=Boolean)]
+Initial volume flow rate [m3/s]
+Initial mass flow rate [kg/s]
+Fluid Volume - truncated cone [m3]
+[kg/s]
+[kg/s2]
+Water velocity [m/s]
+Angle between gravity vector and the center line of the pipe [rad|deg]
+End areas of the pipe [m2]
+End areas of the pipe [m2]
+[1]
+Active area for pressure force calculation [m2]
+[m]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+Recalculates lossFactors into recovery factors for L-> R in pos [1:2] and R-> pos [3:4] [1]
+
+[N]
+[N]
+[m/s]
+[m/s]
+
+
+
+
+
+
+
+
+
+
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+Used to store actual recovery factor depending on the flow direction, [1] in [2] out [1]
+[N]
+[N]
+[N]
+[kg/m3|g/cm3]
+[Pa.s]
+[J/(kg.K)]
+[1]
+[1]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
+Water head [m]
+[1/Pa]
+[kg/s]
+[W]
+[W]
+Enthalpy flowrate at port A [W]
+Enthalpy flowrate at port B [W]
+[m2]
+[m3]
+[Pa/s]
+[m/s]
+[m3/s]
+Absolute pressure of medium [Pa|bar]
+Temperature of medium [K|degC]
+mass fractions [kg/kg]
+[Pa|bar]
+[Pa/s]
+[K|degC]
+[K/s]
+Mass fractions of exiting fluid [kg/kg]
+Mass fractions of exiting fluid [kg/kg]
+Parameterization option [:#(type=HydroPower.Basic.TypesAndConstants.Enumerations.VolumeParameterizationOption1)]
+Diameter of volume [m]
+Cross section area of volume [m2]
+Length of the container [m]
+pu content of the free gas in the enclosed media [1]
+Elacticity of the container walls as dVol/dp [m^3/bar] [m4.kg-1.s2]
+Initialization pressure [Pa|bar]
+Initialization temperature [K|degC]
+If true, model initializes in steady state [:#(type=Boolean)]
+If true, Temperature is constant  [:#(type=Boolean)]
+If true, include kinetic energy in energy balance [:#(type=Boolean)]
+[kg/m3|g/cm3]
+[kg]
+[J/(kg.K)]
+[Pa|bar]
+[m-3.kg.K-1]
+[Pa.s]
 Water head [m]
 [1/Pa]
 [kg/s]
