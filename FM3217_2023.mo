@@ -656,5 +656,58 @@ package FM3217_2023 "Collection of models as created in FM3217"
       annotation (experiment(StopTime=600, __Dymola_NumberOfIntervals=5000));
     end WaterWayWithSurgeShaft;
   end Tutorial5;
+
+  package Tutorial6
+    model ReservoirBase
+      inner HydroPower.System_HPL system_HPL(steadyState=true,
+          constantTemperature=true)
+        annotation (Placement(transformation(extent={{-92,76},{-72,96}})));
+      HydroPower.HydroSystems.Reservoir headwater
+        annotation (Placement(transformation(extent={{-66,20},{-46,40}})));
+      HydroPower.HydroSystems.Reservoir tailwater
+        annotation (Placement(transformation(extent={{50,12},{70,32}})));
+      HydroPower.HydroSystems.Pipe conduit(horizontalIcon=true, L=1000)
+        annotation (Placement(transformation(extent={{-36,14},{-16,34}})));
+    equation
+      connect(headwater.a2_pipe, conduit.a)
+        annotation (Line(points={{-45,24},{-37,24}}, color={0,0,255}));
+      annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+            coordinateSystem(preserveAspectRatio=false)));
+    end ReservoirBase;
+
+    model TwoReservoirs
+      extends Modelica.Icons.Example;
+      extends ReservoirBase(conduit(ZL=100));
+    equation
+      connect(conduit.b, tailwater.a1_pipe) annotation (Line(points={{-15,24},{
+              18,24},{18,16},{49,16}}, color={0,0,255}));
+      annotation (experiment(StopTime=600, __Dymola_Algorithm="Radau"));
+    end TwoReservoirs;
+
+    model TwoReservoirsWithSource
+      extends Modelica.Icons.Example;
+      extends ReservoirBase(conduit(ZL=100));
+      HydroPower.SinksAndSources.Fixed_HT constantWaterHead(
+        paraOption=false,
+        H_const=75,
+        Hmax=100,
+        depth=50)
+        annotation (Placement(transformation(extent={{-96,26},{-76,46}})));
+      HydroPower.SinksAndSources.Fixed_HT constantTailWater(
+        paraOption=false,
+        H_const=75,
+        Hmax=100,
+        depth=50)
+        annotation (Placement(transformation(extent={{98,18},{78,38}})));
+    equation
+      connect(conduit.b, tailwater.a1_pipe) annotation (Line(points={{-15,24},{
+              18,24},{18,16},{49,16}}, color={0,0,255}));
+      connect(headwater.a1_open, constantWaterHead.b)
+        annotation (Line(points={{-67,36},{-75,36}}, color={0,0,255}));
+      connect(tailwater.a2_open, constantTailWater.b)
+        annotation (Line(points={{71,28},{77,28}}, color={0,0,255}));
+      annotation (experiment(StopTime=600, __Dymola_Algorithm="Radau"));
+    end TwoReservoirsWithSource;
+  end Tutorial6;
   annotation (uses(Modelica(version="4.0.0"), HydroPower(version="2.17")));
 end FM3217_2023;

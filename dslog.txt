@@ -1,28 +1,20 @@
-Log-file of program ./dymosim
-(generated: Sun Oct  8 17:10:50 2023)
+Model: FM3217_2023.Tutorial6.TwoReservoirsWithSource
+Integration started at 0 using integration method:
+RK-method: radau IIa
+Local extrapolation
+FSAL
+Continuous extension
 
-dymosim started
-... "dsin.txt" loading (dymosim input file)
-... "WaterWayWithSurgeShaft.mat" creating (simulation result file)
-
-Integration started at T = 0 using integration method DASSL
-(DAE multi-step solver (dassl/dasslrt of Petzold modified by Dassault Systemes))
 Integration terminated successfully at T = 600
-   CPU-time for integration                : 3.1 seconds
-   CPU-time for one grid interval          : 0.619 milliseconds
-   CPU-time for initialization             : 0.014 seconds
-   Number of result points                 : 5006
-   Number of grid points                   : 5001
-   Number of accepted steps                : 5745
-   Number of f-evaluations (dynamics)      : 11751
-   Number of crossing function evaluations : 10747
-   Number of Jacobian-evaluations          : 233
-   Number of model time events             : 2
-   Number of input time events             : 0
-   Number of state events                  : 0
-   Number of step events                   : 0
-   Minimum integration stepsize            : 8.4e-10
-   Maximum integration stepsize            : 0.846
-   Maximum integration order               : 5
-Calling terminal section
-... "dsfinal.txt" creating (final states)
+   CPU-time for integration                  : 0.108 seconds
+   CPU-time for initialization               : 0.003 seconds
+   Number of result points                   : 501
+   Number of grid points                     : 500
+   Number of accepted steps                  : 74
+   Number of rejected steps                  : 7
+   Number of f-evaluations (dynamics)        : 569
+   Number of crossing function evaluations   : 220
+   Number of Jacobian-evaluations            : 9
+   Number of model time events               : 0
+   Number of state events                    : 0
+   Number of step events                     : 0
