@@ -855,5 +855,15 @@ package FM3217_2023 "Collection of models as created in FM3217"
           __Dymola_Algorithm="Radau"));
     end SundsbarmWaterway;
   end Tutorial6;
+
+  package Tutorial7
+    model PlantConnectAndDisconnectToGrid
+      extends HydroPower.Examples.PlantConnectAndDisconnectToGrid;
+      annotation (experiment(
+          StopTime=600,
+          Tolerance=1e-05,
+          __Dymola_Algorithm="Radau"));
+    end PlantConnectAndDisconnectToGrid;
+  end Tutorial7;
   annotation (uses(Modelica(version="4.0.0"), HydroPower(version="2.17")));
 end FM3217_2023;

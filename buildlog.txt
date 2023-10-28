@@ -7,6 +7,22 @@ Compiling and linking the model (Visual C++).
 **********************************************************************
 [vcvarsall.bat] Environment initialized for: 'x86'
 dsmodel.c
+dsmodel.c(4743): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(4745): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(4568): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(4580): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(4582): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(4584): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(4596): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(4598): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(5427): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(5429): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(5338): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(5350): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(5352): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(5354): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(5366): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+dsmodel.c(5368): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
    Creating library dymosim.lib and object dymosim.exp
 gsundials.lib(cvode.obj) : warning LNK4217: locally defined symbol ___iob_func imported in function _cvProcessError
 DymUtil.lib(amat.obj) : warning LNK4049: locally defined symbol ___iob_func imported
