@@ -876,20 +876,20 @@ package FM3217_2023 "Collection of models as created in FM3217"
         Hmax=fill(105, reservoir1.n),
         H_start=fill(100, reservoir1.n),
         depthIntake={0,15},
-        steadyState=false) annotation (Placement(transformation(extent={{-74,-20},{
-                -54,0}}, rotation=0)));
-      HydroPower.HydroSystems.Reservoir reservoir2(
+        steadyState=false) annotation (Placement(transformation(extent={{-95,-42},
+                {-75,-22}},
+                         rotation=0)));
+      HydroPower.HydroSystems.Reservoir river(
         n=4,
         L=500,
         nSegmentIntake={1,3},
-        Hmax=fill(70, reservoir2.n),
-        H_start=fill(60, reservoir2.n),
+        Hmax=fill(70, river.n),
+        H_start=fill(60, river.n),
         depth={70,70,70,70},
         depthIntake={0,1},
-        steadyState=false) annotation (Placement(transformation(extent={{56,-42},{
-                76,-22}},
-                        rotation=0)));
-      HydroPower.HydroSystems.Pipe headrace(
+        steadyState=false) annotation (Placement(transformation(extent={{73,-52},
+                {93,-32}}, rotation=0)));
+      HydroPower.HydroSystems.Pipe pressureShaft(
         L=200,
         ZL=90,
         ZR=40,
@@ -898,11 +898,11 @@ package FM3217_2023 "Collection of models as created in FM3217"
         Q_start=0.1,
         n=5,
         enable_dataVizPort_lower=true,
-        p_start=540000) annotation (Placement(transformation(extent={{-42,-26},
-                {-22,-6}}, rotation=0)));
+        p_start=540000) annotation (Placement(transformation(extent={{-8,-53},{
+                12,-33}}, rotation=0)));
       HydroPower.MechanicalSystems.BasicTurbine turbine(
-        np=32,
-        H_nom=50,
+        np=12,
+        H_nom=480,
         tableOnFile=true,
         LdraftTube=10,
         DavDraftTube=2,
@@ -910,19 +910,20 @@ package FM3217_2023 "Collection of models as created in FM3217"
         DavScrollCasing=2,
         PUInFlowTables=true,
         QTableName="Qtab",
-        Q_nom=92,
-        H_start=100,
-        H_start_draftTube=40,
+        Q_nom=24,
+        H_start=564 + 48,
+        H_start_draftTube=115,
         Ty=0.4,
         yvLim1=[-0.1, 0.1],
         yvLim2=[-0.2, 0.2],
         TurbineDataFile=Modelica.Utilities.Files.loadResource(HydroPower.TABLE_DIR
              + "TurbineDataFile.mat"),
-        P_nom=45000000) annotation (Placement(transformation(extent={{-9,-34},{11,
-                -14}},
+        P_nom=103000000)
+                        annotation (Placement(transformation(extent={{18,-72},{
+                38,-52}},
                      rotation=0)));
 
-      HydroPower.HydroSystems.Pipe tailrace(
+      HydroPower.HydroSystems.Pipe downstream(
         n=4,
         endL={5,5},
         ZL=40,
@@ -931,8 +932,8 @@ package FM3217_2023 "Collection of models as created in FM3217"
         endD={5.5,5.5},
         Q_start=0.1,
         enable_dataVizPort_lower=true,
-        p_start=400000) annotation (Placement(transformation(extent={{22,-34},{
-                42,-14}}, rotation=0)));
+        p_start=400000) annotation (Placement(transformation(extent={{44,-50},{
+                64,-30}}, rotation=0)));
       HydroPower.ElectricalSystems.PowerGrid powerGrid(
         startTime=1e6,
         unitsJ={122000,5.5e6,8000},
@@ -948,13 +949,14 @@ package FM3217_2023 "Collection of models as created in FM3217"
         startTime=1e6) annotation (Placement(transformation(extent={{-37,64},{-25,
                 76}}, rotation=0)));
       HydroPower.ElectricalSystems.GeneratorAndMCB generator(
-        np={32},
+        np={12},
         Kdmp={0.05},
         f_start=0,
-        J={183000.0},
+        J={212500},
         timeMCB_close={150},
         timeMCB_open={200},
-        P_nom={45000000}) annotation (Placement(transformation(extent={{-59,40},{
+        P_nom={103000000})
+                          annotation (Placement(transformation(extent={{-59,40},{
                 -39,60}},
                        rotation=0)));
       HydroPower.ControllersAndSensors.TurbineGovernorAnalog turbineGovernor(
@@ -970,10 +972,6 @@ package FM3217_2023 "Collection of models as created in FM3217"
         P_generator_nom=generator.P_nom[1],
         enableRamp=false) annotation (Placement(transformation(extent={{-24,40},
                 {-4,60}}, rotation=0)));
-      HydroPower.Visualizers.DisplayVis_Q_T_pin_pout penstock1_values
-        annotation (Placement(transformation(extent={{-55,-56},{-25,-36}})));
-      HydroPower.Visualizers.DisplayVis_Q_T_pin_pout penstock2_values
-        annotation (Placement(transformation(extent={{8,-62},{38,-42}})));
       HydroPower.Visualizers.RealValue turbinePower(precision=2, input_Value=
             turbine.summary.P_turbine*1e-6)
         annotation (Placement(transformation(extent={{64,10},{78,24}})));
@@ -987,12 +985,37 @@ package FM3217_2023 "Collection of models as created in FM3217"
         pipeRoughness=0.1,
         T_start=293)
         annotation (Placement(transformation(extent={{-90,-80},{-70,-60}})));
-      HydroPower.Visualizers.RealValue gridbalanceNum1(precision=2, input_Value
-          =generator.summary.f[1])
+      HydroPower.Visualizers.RealValue gridbalanceNum1(precision=2, input_Value=
+           generator.summary.f[1])
         annotation (Placement(transformation(extent={{64,53},{78,67}})));
-      HydroPower.Visualizers.RealValue gridbalanceNum2(precision=2, input_Value
-          =generator.summary.P_generator[1]*1e-6)
+      HydroPower.Visualizers.RealValue gridbalanceNum2(precision=2, input_Value=
+           generator.summary.P_generator[1]*1e-6)
         annotation (Placement(transformation(extent={{64,25},{78,39}})));
+      HydroPower.HydroSystems.Pipe conduit(
+        endD={5.8,5.8},
+        L=6600,
+        ZL=564,
+        ZR=541.5,
+        horizontalIcon=true)
+        annotation (Placement(transformation(extent={{-69,-46},{-49,-26}})));
+      HydroPower.HydroSystems.SurgeTank surgeTank(
+        D=3.6,
+        deltZ=150,
+        H2L=0.87,
+        Vol=100) annotation (Placement(transformation(extent={{-39,-55},{-19,
+                -35}})));
+      HydroPower.SinksAndSources.Fixed_HT constantWaterHead(
+        paraOption=false,
+        H_const=75,
+        Hmax=100,
+        depth=50)
+        annotation (Placement(transformation(extent={{-74,-13},{-94,7}})));
+      HydroPower.SinksAndSources.Fixed_HT constantTailWater(
+        paraOption=false,
+        H_const=75,
+        Hmax=100,
+        depth=50)
+        annotation (Placement(transformation(extent={{71,-24},{91,-4}})));
     equation
 
       connect(powerGrid.f_grid, generator.f_grid) annotation (Line(
@@ -1025,47 +1048,42 @@ package FM3217_2023 "Collection of models as created in FM3217"
           smooth=Smooth.None));
 
       connect(generator.f_out, powerGrid.f) annotation (Line(
-          points={{-38,43},{-33,43},{-33,11},{-94,11},{-94,43},{-90,43}},
+          points={{-38,43},{-32,43},{-32,9},{-93,9},{-93,43},{-90,43}},
           color={0,0,127},
           smooth=Smooth.None));
-      connect(headrace.dataVizPort_lower, penstock1_values.vizDataPort) annotation (
-         Line(
-          points={{-40,-27},{-40,-46}},
-          color={0,0,0},
-          pattern=LinePattern.Dot,
-          smooth=Smooth.None));
-      connect(tailrace.dataVizPort_lower, penstock2_values.vizDataPort) annotation (
-         Line(
-          points={{24,-35},{23,-35},{23,-52}},
-          color={0,0,0},
-          pattern=LinePattern.Dot,
-          smooth=Smooth.None));
-      connect(reservoir1.a2_pipe, headrace.a) annotation (Line(
-          points={{-53,-16},{-43,-16}},
+      connect(turbine.a, pressureShaft.b) annotation (Line(
+          points={{17,-62},{13,-62},{13,-43}},
           color={0,0,255},
           smooth=Smooth.None));
-      connect(turbine.a, headrace.b) annotation (Line(
-          points={{-10,-24},{-15,-24},{-15,-16},{-21,-16}},
+      connect(turbine.b, downstream.a) annotation (Line(
+          points={{39,-62},{43,-62},{43,-40}},
           color={0,0,255},
           smooth=Smooth.None));
-      connect(turbine.b, tailrace.a) annotation (Line(
-          points={{12,-24},{21,-24}},
-          color={0,0,255},
-          smooth=Smooth.None));
-      connect(tailrace.b, reservoir2.a1_pipe) annotation (Line(
-          points={{43,-24},{50,-24},{50,-38},{55,-38}},
+      connect(downstream.b, river.a1_pipe) annotation (Line(
+          points={{65,-40},{69,-40},{69,-48},{72,-48}},
           color={0,0,255},
           smooth=Smooth.None));
       connect(powerGrid.J_grid, generator.J_grid)
         annotation (Line(points={{-68,50},{-68,50},{-60,50}}, color={0,0,127}));
       connect(turbineGovernor.y, turbine.yGV)
-        annotation (Line(points={{-3,50},{7,50},{7,-13}},
+        annotation (Line(points={{-3,50},{34,50},{34,-51}},
                                                         color={0,0,127}));
       connect(generator.f_out[1], turbine.f_generator) annotation (Line(points={{-38,43},
-              {-34,43},{-34,20},{-5,20},{-5,-13}},       color={0,0,127}));
+              {-32,43},{-32,9},{22,9},{22,-51}},         color={0,0,127}));
       connect(turbine.TurbineData[1], generator.P_turbine[1]) annotation (Line(
-            points={{1,-13.6667},{1,-13.6667},{1,30},{-55,30},{-55,39}}, color={0,0,
+            points={{28,-51.6667},{28,23},{-55,23},{-55,39}},            color={0,0,
               127}));
+      connect(conduit.b,surgeTank. a)
+        annotation (Line(points={{-48,-36},{-47,-36},{-47,-45},{-40,-45}},
+                                                   color={0,0,255}));
+      connect(reservoir1.a2_pipe, conduit.a) annotation (Line(points={{-74,-38},
+              {-74,-36},{-70,-36}}, color={0,0,255}));
+      connect(surgeTank.b, pressureShaft.a) annotation (Line(points={{-18,-45},
+              {-18,-43},{-9,-43}}, color={0,0,255}));
+      connect(constantWaterHead.b, reservoir1.a1_open) annotation (Line(points=
+              {{-95,-3},{-97,-3},{-97,-26},{-96,-26}}, color={0,0,255}));
+      connect(constantTailWater.b, river.a2_open) annotation (Line(points={{92,
+              -14},{97,-14},{97,-36},{94,-36}}, color={0,0,255}));
       annotation (
         Diagram(coordinateSystem(
             preserveAspectRatio=false,
